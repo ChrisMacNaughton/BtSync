@@ -1,0 +1,28 @@
+--- 
+recorded_with: VCR 2.5.0
+http_interactions: 
+- request: 
+    method: get
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=grsJ7BMbd6FPJND8DVjjZBZdHKV44iACI83vsaYfENHJYr2peP4GJdU7rlEAAAAA
+    body: 
+      string: ""
+    headers: 
+      Cookie: 
+      - GUID=SklJvMPAaAAUrQIQ3W3i
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Connection: 
+      - keep-alive
+      Content-Type: 
+      - application/json; charset=utf-8
+      Content-Length: 
+      - "186"
+      Cache-Control: 
+      - no-cache
+    body: 
+      string: "{ \"folders\": [ { \"name\": \"\\/home\\/chris\\/Documents\", \"peers\": [  ], \"secret\": \"KLXT6ZZBEABLFIL6X7VBHT7YA4YQQOJM\", \"size\": \"21 B in 1 files\" } ], \"speed\": \"0.0 kB\\/s up, 0.0 kB\\/s down\" }"
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 19:11:20 GMT

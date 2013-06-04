@@ -1,8 +1,7 @@
 require 'httparty'
 require 'nokogiri'
-require 'json'
 
-class Btsync
+class BtSync
   include HTTParty
   def initialize uri=nil, port=nil
     @cache = {
@@ -10,6 +9,7 @@ class Btsync
       :secret => 0,
       :settings => 0,
       :os_type => 0,
+      :version => 0,
       :new_version => 0
     }
     @uri = uri
@@ -48,7 +48,7 @@ class Btsync
     time = DateTime.now.strftime("%s").to_i
     if time > @cache[:version] + 600
       res = self.class.get(path('getversion'), :query => {:output => "json"}, :headers => {"Cookie" => cookies })
-      @version = res.parsed_response
+      @version = res.parsed_response["version"]
       @cache[:version] = time
     end
     @version
@@ -95,7 +95,7 @@ class Btsync
     @cookies ||= request_token.headers["set-cookie"].split("; ")[0]
   end
   def request_token
-    @request_token ||= self.class.get("#{uri}:#{port}/gui/token.html?t=" + DateTime.now.strftime('%s'))
+    @request_token ||= self.class.get("#{uri}:#{port}/gui/token.html")
   end
   def path action_name
     "#{uri}:#{port}/gui/?token=#{secret}&action=#{action_name}"
