@@ -3,6 +3,7 @@ require 'nokogiri'
 
 class BtSync
   include HTTParty
+  format :json
   def initialize uri=nil, port=nil
     @cache = {
       :folder => 0,
@@ -95,7 +96,7 @@ class BtSync
     @cookies ||= request_token.headers["set-cookie"].split("; ")[0]
   end
   def request_token
-    @request_token ||= self.class.get("#{uri}:#{port}/gui/token.html")
+    @request_token ||= self.class.get("#{uri}:#{port}/gui/token.html", :query => {:output => :html})
   end
   def path action_name
     "#{uri}:#{port}/gui/?token=#{secret}&action=#{action_name}"
