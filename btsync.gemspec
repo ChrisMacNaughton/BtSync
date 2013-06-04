@@ -5,7 +5,7 @@ require 'btsync/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "btsync"
-  spec.version       = Btsync::VERSION
+  spec.version       = BtsyncVersion::VERSION
   spec.authors       = ["Chris MacNaughton"]
   spec.email         = ["chmacnaughton@gmail.com"]
   spec.description   = %q{Class to interact with BTSync's web interface}
@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_runtime_dependency "httparty"
+  spec.add_runtime_dependency "nokogiri"
 end

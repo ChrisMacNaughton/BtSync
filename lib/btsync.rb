@@ -1,23 +1,27 @@
-require "btsync/version"
 require 'httparty'
+require 'nokogiri'
 
 class Btsync
-  include 'httparty'
-  def initialize uri, port
+  include HTTParty
+
+  def initialize uri=nil, port=nil
     @uri = uri
     @port = port
   end
-  def generate_secret
-    action 'generatesecret'
+
+  def port
+    @port ||= '8888'
   end
-  private
+  def uri
+    @uri ||= "http://localhost"
+  end
   def secret
-    @secret ||= self.get(path + 'token.html?t=' + DateTime.now.strftime('%s'))
+    @secret ||= Nokogiri::HTML(self.class.get(path + 'token.html?t=' + DateTime.now.strftime('%s'))).search('#token').text
   end
   def path
-    "#{uri}:#{port}/gui"
+    "#{uri}:#{port}/gui/"
   end
   def action action_name
-    self.get(path, :query => {:token => secret, :action => action_name})
+    self.class.get(path, :query => {:token => secret, :action => action_name})
   end
 end
