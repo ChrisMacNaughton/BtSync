@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Btsync::VERSION
   spec.authors       = ["Chris MacNaughton"]
   spec.email         = ["chmacnaughton@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Class to interact with BTSync's web interface}
+  spec.summary       = %q{Class to interact with BTSync's web interface}
   spec.homepage      = ""
   spec.license       = "MIT"
 
