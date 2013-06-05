@@ -40,6 +40,12 @@ class BtSync
     token(true)
     true
   end
+  def update_secret with_dir, new_secret = nil, my_secret = nil
+    my_secret ||= secret(with_dir)
+    new_secret ||= generate_secret
+    self.class.get(path('updatesecret'), :query => { :name => with_dir, :secret => my_secret, :newsecret => new_secret}, :headers => {"Cookie" => cookies})
+    true
+  end
   def use_tracker with_dir, opt = true
     res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'usetracker', opt), :headers => {"Cookie" => cookies })
     true
