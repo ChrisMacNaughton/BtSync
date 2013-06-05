@@ -11,7 +11,7 @@ describe 'BtSync' do
     VCR.use_cassette("get-folders") do
       @folder = @bt.get_folders.first
     end
-    @folder["name"].should == "/home/chris/Documents"
+    @folder.name.should == "/home/chris/Documents"
   end
   it "can view settings" do
     VCR.use_cassette("get-settings") do
@@ -40,7 +40,7 @@ describe 'BtSync' do
       folders = @bt.get_folders
       folders.count.should == 2
       folder = folders.last
-      folder["name"].should == "/home/chris/bt_test"
+      folder.name.should == "/home/chris/bt_test"
     end
     VCR.use_cassette("remove-folder") do
       @bt.remove_folder '/home/chris/bt_test'
@@ -49,7 +49,7 @@ describe 'BtSync' do
       folders = @bt.get_folders
       folders.count.should == 1
       folder = folders.last
-      folder["name"].should == "/home/chris/Documents"
+      folder.name.should == "/home/chris/Documents"
     end
   end
 end

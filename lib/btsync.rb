@@ -1,9 +1,14 @@
 require 'httparty'
+lib = File.expand_path('../btsync', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'communicator'
 
 class BtSync
+  include BtCommunicator
   include HTTParty
   default_params :output => 'json'
-  debug_output
+
   def initialize uri=nil, port=nil
     @uri = uri
     @port = port
@@ -16,7 +21,12 @@ class BtSync
     errors
   end
   def get_folders
-    get_folder_list["folders"]
+    f = get_folder_list["folders"]
+    folders = []
+    f.each do |folder|
+      folders << Directory.new(folder["name"], folder["secret"])
+    end
+    folders
   end
   def get_speed
     s = get_folder_list["speed"].split(", ")
@@ -27,7 +37,6 @@ class BtSync
   def remove_folder folder_name, my_secret = nil
     my_secret ||= secret(folder_name)
     res = self.class.get(path('removefolder'), :query => { :name => folder_name, :secret => my_secret}, :headers => {"Cookie" => cookies})
-    token(true)
     true
   end
   def add_folder folder_name, my_secret = nil
@@ -37,64 +46,9 @@ class BtSync
       @errors << res["message"]
       return false
     end
-    token(true)
     true
   end
-  def update_secret with_dir, new_secret = nil, my_secret = nil
-    my_secret ||= secret(with_dir)
-    new_secret ||= generate_secret
-    self.class.get(path('updatesecret'), :query => { :name => with_dir, :secret => my_secret, :newsecret => new_secret}, :headers => {"Cookie" => cookies})
-    true
-  end
-  def use_tracker with_dir, opt = true
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'usetracker', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def use_tracker? with_dir
-    bool(get_folder_preferences(with_dir)["usetracker"])
-  end
-  def use_hosts with_dir, opt = false
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'usehosts', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def use_hosts? with_dir
-    bool(get_folder_preferences(with_dir)["usehosts"])
-  end
-  def search_lan with_dir, opt = true
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'searchlan', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def search_lan? with_dir
-    bool(get_folder_preferences(with_dir)["searchlan"])
-  end
-  def search_dht with_dir, opt = false
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'searchdht', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def search_dht? with_dir
-    bool(get_folder_preferences(with_dir)["searchdht"])
-  end
-  def use_relay with_dir, opt = true
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'relay', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def use_relay? with_dir
-    bool(get_folder_preferences(with_dir)["relay"])
-  end
-  def delete_to_trash with_dir, opt = true
-    res = self.class.get(path('setfolderpref'), query: make_opts(with_dir, 'deletetotrash', opt), :headers => {"Cookie" => cookies })
-    true
-  end
-  def delete_to_trash? with_dir
-    bool(get_folder_preferences(with_dir)["deletetotrash"])
-  end
-  def is_writable? with_dir
-    bool(get_folder_preferences(with_dir)["iswritable"])
-  end
-  def generate_secret
-    res = self.class.get(path('generatesecret'), :headers => {"Cookie" => cookies })
-    res.parsed_response["secret"]
-  end
+
   def get_settings
     res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
     res.parsed_response["settings"]
@@ -111,11 +65,7 @@ class BtSync
     res = self.class.get(path('checknewversion'), :headers => {"Cookie" => cookies })
     res.parsed_response["version"]
   end
-  def get_folder_preferences folder_name, my_secret = nil
-    my_secret ||= secret(folder_name)
-    res = self.class.get(path('getfolderpref'), :query => { :name => folder_name, :secret => my_secret}, :headers => {"Cookie" => cookies})
-    res.parsed_response["folderpref"]
-  end
+
   def get_dir with_dir
     res = self.class.get(path('getdir'), :query => {:dir => with_dir}, :headers => {"Cookie" => cookies })
     res.parsed_response["folders"]
@@ -126,67 +76,114 @@ class BtSync
     res["hosts"]
   end
   def secret with_dir
-    f = get_folders.select{|folder| folder["name"] == with_dir}.first
-    f["secret"]
-  end
-  def get_read_only_secret with_dir, my_secret = nil
-    my_secret ||= secret(with_dir)
-    get_folder_preferences(with_dir, my_secret)["readonlysecret"]
+    f = get_folders.select{|folder| folder.name == with_dir}.first
+    f.secret
   end
   private
-  def make_opts with_dir, name, opt
-    opts = get_folder_preferences(with_dir)
-    opts[name] = bool_to_i(opt)
-    opts.delete('readonlysecret')
-    opts.merge!({:name => with_dir, :secret => secret(with_dir)})
-  end
-  def bool i
-    if i == 0
-      false
-    elsif i == 1
-      true
-    else
-      i
-    end
-  end
-  def bool_to_i bool
-    if bool
-      1
-    else
-      0
-    end
-  end
+
   def get_folder_list
     res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
     @folder_list = res.parsed_response
   end
 
-  def port
-    @port ||= '8888'
-  end
-  def uri
-    @uri ||= "http://localhost"
-  end
-  def token force = false
-    time = DateTime.now.strftime("%s").to_i
-    if time > @token_cache + 600 || force
-      @token = request_token(force).gsub('</div></html>', '').gsub("<html><div id='token' style='display:none;'>", '')
-      @token_cache = time
+  class Directory
+    include HTTParty
+    include BtCommunicator
+    default_params :output => 'json'
+
+    attr_reader :secret, :name
+
+    def initialize name, secret
+      @name = name
+      @secret = secret
+      @errors = []
     end
-    @cookies = nil if force
-    @token
-  end
-  def cookies
-    @cookies ||= request_token.headers["set-cookie"].split("; ")[0]
-  end
-  def request_token force = false
-    if @request_token.nil? || force
-      @request_token = self.class.get("#{uri}:#{port}/gui/token.html", :query => {:output => :text})
-    else
-      @request_token
+
+    def update_secret new_secret = nil
+      new_secret ||= generate_secret
+      res = self.class.get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret}, :headers => {"Cookie" => cookies})
+      if res.parsed_response != "{}" && res.parsed_response != '\r\ninvalid request'
+        @secret = new_secret
+        true
+      else
+        @errors << res.parsed_response
+        false
+      end
     end
-  end
-  def path action_name
-    "#{uri}:#{port}/gui/?token=#{token}&action=#{action_name}"
+    def use_tracker=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('usetracker', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def use_tracker?
+      bool(preferences["usetracker"])
+    end
+    def use_hosts=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('usehosts', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def use_hosts?
+      bool(preferences["usehosts"])
+    end
+    def search_lan=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('searchlan', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def search_lan?
+      bool(preferences["searchlan"])
+    end
+    def search_dht=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('searchdht', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def search_dht?
+      bool(preferences["searchdht"])
+    end
+    def use_relay=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('relay', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def use_relay?
+      bool(preferences["relay"])
+    end
+    def delete_to_trash=(opt)
+      res = self.class.get(path('setfolderpref'), query: make_opts('deletetotrash', opt), :headers => {"Cookie" => cookies })
+      true
+    end
+    def delete_to_trash?
+      bool(preferences["deletetotrash"])
+    end
+    def is_writable? with_dir
+      bool(preferences["iswritable"])
+    end
+    def preferences
+      res = self.class.get(path('getfolderpref'), :query => { :name => @name, :secret => @secret}, :headers => {"Cookie" => cookies})
+      res.parsed_response["folderpref"]
+    end
+    def read_only_secret
+      preferences["readonlysecret"]
+    end
+    private
+    def make_opts name, opt
+     opts = preferences
+     opts[name] = bool_to_i(opt)
+     opts.delete('readonlysecret')
+     opts.merge!({:name => @name, :secret => @secret})
+    end
+    def bool i
+      if i == 0
+        false
+      elsif i == 1
+        true
+      else
+        i
+      end
+    end
+    def bool_to_i bool
+      if bool
+        1
+      else
+        0
+      end
+    end
   end
 end
