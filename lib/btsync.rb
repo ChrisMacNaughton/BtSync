@@ -125,9 +125,13 @@ class BtSync
     res = self.class.get(path('getknownhosts'), :query => {:name => with_dir, :secret => my_secret}, :headers => {"Cookie" => cookies })
     res["hosts"]
   end
-  def secret folder_name
-    f = get_folders.select{|folder| folder["name"] == folder_name}.first
+  def secret with_dir
+    f = get_folders.select{|folder| folder["name"] == with_dir}.first
     f["secret"]
+  end
+  def get_read_only_secret with_dir, my_secret = nil
+    my_secret ||= secret(with_dir)
+    get_folder_preferences(with_dir, my_secret)["readonlysecret"]
   end
   private
   def make_opts with_dir, name, opt
