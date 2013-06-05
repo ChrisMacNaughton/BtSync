@@ -27,40 +27,20 @@ class BtSync
   end
 
   def get_settings
-    time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:settings] + 600
-      res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
-      @settings = res.parsed_response["settings"]
-      @cache[:settings] = time
-    end
-    @settings
+    res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
+    @settings = res.parsed_response["settings"]
   end
   def get_os_type
-    time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:os_type] + 600
-      res = self.class.get(path('getostype'), :headers => {"Cookie" => cookies })
-      @os_type = res.parsed_response["os"]
-      @cache[:os_type] = time
-    end
-    @os_type
+    res = self.class.get(path('getostype'), :headers => {"Cookie" => cookies })
+    @os_type = res.parsed_response["os"]
   end
   def get_version
-    time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:version] + 600
-      res = self.class.get(path('getversion'), :headers => {"Cookie" => cookies })
-      @version = res.parsed_response["version"]
-      @cache[:version] = time
-    end
-    @version
+    res = self.class.get(path('getversion'), :headers => {"Cookie" => cookies })
+    @version = res.parsed_response["version"]
   end
   def check_new_version
-    time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:new_version] + 600
-      res = self.class.get(path('checknewversion'), :headers => {"Cookie" => cookies })
-      @new_version = res.parsed_response["version"]
-      @cache[:new_version] = time
-    end
-    @new_version
+    res = self.class.get(path('checknewversion'), :headers => {"Cookie" => cookies })
+    @new_version = res.parsed_response["version"]
   end
   def get_dir with_dir
     res = self.class.get(path('getdir'), :query => {:dir => with_dir}, :headers => {"Cookie" => cookies })
@@ -68,13 +48,8 @@ class BtSync
   end
   private
   def get_folder_list
-    time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:folder] + 600
-      res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
-      @folder_list = res.parsed_response
-      @cache[:folder] = time
-    end
-    @folder_list
+    res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+    @folder_list = res.parsed_response
   end
 
   def port
