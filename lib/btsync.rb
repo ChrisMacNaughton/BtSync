@@ -23,8 +23,9 @@ class BtSync
     token(true)
     true
   end
-  def add_folder folder_name
-    res = self.class.get(path('addsyncfolder'), :query => { :name => folder_name, :secret => generate_secret}, :headers => {"Cookie" => cookies})
+  def add_folder folder_name, my_secret = nil
+    my_secret ||= generate_secret
+    res = self.class.get(path('addsyncfolder'), :query => { :name => folder_name, :secret => my_secret}, :headers => {"Cookie" => cookies})
     token(true)
     true
   end
