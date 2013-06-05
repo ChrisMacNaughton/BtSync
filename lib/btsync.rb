@@ -3,18 +3,11 @@ require 'httparty'
 class BtSync
   include HTTParty
   default_params :output => 'json'
+  debug_output
   def initialize uri=nil, port=nil
-    @cache = {
-      :folder => 0,
-      :secret => 0,
-      :settings => 0,
-      :os_type => 0,
-      :version => 0,
-      :new_version => 0
-    }
     @uri = uri
     @port = port
-    token
+    @token_cache = 0
   end
   def get_folders
     get_folder_list["folders"]
@@ -28,25 +21,33 @@ class BtSync
 
   def get_settings
     res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
-    @settings = res.parsed_response["settings"]
+    res.parsed_response["settings"]
   end
   def get_os_type
     res = self.class.get(path('getostype'), :headers => {"Cookie" => cookies })
-    @os_type = res.parsed_response["os"]
+    res.parsed_response["os"]
   end
   def get_version
     res = self.class.get(path('getversion'), :headers => {"Cookie" => cookies })
-    @version = res.parsed_response["version"]
+    res.parsed_response["version"]
   end
   def check_new_version
     res = self.class.get(path('checknewversion'), :headers => {"Cookie" => cookies })
-    @new_version = res.parsed_response["version"]
+    res.parsed_response["version"]
+  end
+  def get_folder_preferences folder_name
+    res = self.class.get(path('getfolderpref'), :query => { :name => folder_name, :secret => secret(folder_name)}, :headers => {"Cookie" => cookies})
+    res.parsed_response["folderpref"]
   end
   def get_dir with_dir
     res = self.class.get(path('getdir'), :query => {:dir => with_dir}, :headers => {"Cookie" => cookies })
     res.parsed_response["folders"]
   end
   private
+  def secret folder_name
+    f = get_folders.select{|folder| folder["name"] == folder_name}.first
+    f["secret"]
+  end
   def get_folder_list
     res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
     @folder_list = res.parsed_response
@@ -60,9 +61,9 @@ class BtSync
   end
   def token
     time = DateTime.now.strftime("%s").to_i
-    if time > @cache[:secret] + 600
+    if time > @token_cache + 600
       @token = request_token.gsub('</div></html>', '').gsub("<html><div id='token' style='display:none;'>", '')
-      @cache[:secret] = time
+      @token_cache = time
     end
     @token
   end
