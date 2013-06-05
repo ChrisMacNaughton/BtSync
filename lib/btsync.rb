@@ -46,7 +46,7 @@ class BtSync
       @errors << res["message"]
       return false
     end
-    true
+    Directory.new(folder_name, my_secret)
   end
 
   def get_settings
@@ -70,11 +70,7 @@ class BtSync
     res = self.class.get(path('getdir'), :query => {:dir => with_dir}, :headers => {"Cookie" => cookies })
     res.parsed_response["folders"]
   end
-  def get_known_hosts with_dir, my_secret = nil
-    my_secret ||= secret(with_dir)
-    res = self.class.get(path('getknownhosts'), :query => {:name => with_dir, :secret => my_secret}, :headers => {"Cookie" => cookies })
-    res["hosts"]
-  end
+
   def secret with_dir
     f = get_folders.select{|folder| folder.name == with_dir}.first
     f.secret
@@ -98,7 +94,10 @@ class BtSync
       @secret = secret
       @errors = []
     end
-
+    def destroy
+      self.class.get(path('removefolder'), :query => { :name => name, :secret => secret}, :headers => {"Cookie" => cookies})
+      self.instance_variables.each{|v| v = nil}
+    end
     def update_secret new_secret = nil
       new_secret ||= generate_secret
       res = self.class.get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret}, :headers => {"Cookie" => cookies})
@@ -109,6 +108,10 @@ class BtSync
         @errors << res.parsed_response
         false
       end
+    end
+    def get_known_hosts
+      res = self.class.get(path('getknownhosts'), :query => {:name => name, :secret => secret}, :headers => {"Cookie" => cookies })
+      res["hosts"]
     end
     def use_tracker=(opt)
       res = self.class.get(path('setfolderpref'), query: make_opts('usetracker', opt), :headers => {"Cookie" => cookies })

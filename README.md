@@ -1,6 +1,6 @@
-# Btsync
+# BtSync
 
-TODO: Write a gem description
+BtSync is a library to help you interact with Bittorrent Sync in Ruby
 
 ## Installation
 
@@ -18,7 +18,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Using BtSync
+
+```ruby
+bittorrent = BtSync.new
+```
+
+####BtSync::Directory
+
+A system directory managed with Bittorrent Sync is represented as a ```BtSync::Directory```.
+
+On a ```BtSync::Directory`` you can
+
+- Update the secret
+- change the settings for
+  - Use tracker server
+  - Use relay server when required
+  - Search LAN
+  - SearchDHT network
+  - Delete Files to Sync Trash
+  - Use Predefined Hosts
+
+## Todo
+
+[ ] Manage predefined hosts
 
 ## Contributing
 
