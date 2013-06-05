@@ -3,7 +3,7 @@ require 'httparty'
 class BtSync
   include HTTParty
   default_params :output => 'json'
-  debug_output
+  #debug_output
   def initialize uri=nil, port=nil
     @uri = uri
     @port = port
@@ -18,7 +18,20 @@ class BtSync
     down = s[1].split(" ")
     {:up => up[0], :down => down[0], :metric => up[1]}
   end
-
+  def remove_folder folder_name
+    res = self.class.get(path('removefolder'), :query => { :name => folder_name, :secret => secret(folder_name)}, :headers => {"Cookie" => cookies})
+    token(true)
+    true
+  end
+  def add_folder folder_name
+    res = self.class.get(path('addsyncfolder'), :query => { :name => folder_name, :secret => generate_secret}, :headers => {"Cookie" => cookies})
+    token(true)
+    true
+  end
+  def generate_secret
+    res = self.class.get(path('generatesecret'), :headers => {"Cookie" => cookies })
+    res.parsed_response["secret"]
+  end
   def get_settings
     res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
     res.parsed_response["settings"]
@@ -59,12 +72,13 @@ class BtSync
   def uri
     @uri ||= "http://localhost"
   end
-  def token
+  def token force = false
     time = DateTime.now.strftime("%s").to_i
-    if time > @token_cache + 600
+    if time > @token_cache + 600 || force
       @token = request_token.gsub('</div></html>', '').gsub("<html><div id='token' style='display:none;'>", '')
       @token_cache = time
     end
+    @cookies = nil if force
     @token
   end
   def cookies

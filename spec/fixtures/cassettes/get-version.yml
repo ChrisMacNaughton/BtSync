@@ -1,28 +1,57 @@
---- 
-recorded_with: VCR 2.5.0
-http_interactions: 
-- request: 
+---
+http_interactions:
+- request:
     method: get
-    uri: http://localhost:8888/gui/?action=getversion&output=json&token=grsJ7BMbd6FPJND8DVjjZBZdHKV44iACI83vsaYfENHJYr2peP4GJdU7rlEAAAAA
-    body: 
-      string: ""
-    headers: 
-      Cookie: 
-      - GUID=SklJvMPAaAAUrQIQ3W3i
-  response: 
-    status: 
+    uri: http://localhost:8888/gui/token.html?output=text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      Connection: 
+    headers:
+      Connection:
       - keep-alive
-      Content-Type: 
-      - application/json; charset=utf-8
-      Content-Length: 
-      - "23"
-      Cache-Control: 
+      Content-Length:
+      - '121'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - GUID=GoXJLgGXVpf8y8SEot2L; path=/
+      Cache-Control:
       - no-cache
-    body: 
-      string: "{ \"version\": 16777350 }"
+    body:
+      encoding: US-ASCII
+      string: <html><div id='token' style='display:none;'>-afkqn0LVJ2YA6qsCgzbECZCMaC0c_tZzY7E24t3veFaMQYcSP0ncBlOr1EAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 04 Jun 2013 19:11:20 GMT
+  recorded_at: Wed, 05 Jun 2013 14:41:29 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getversion&output=json&token=-afkqn0LVJ2YA6qsCgzbECZCMaC0c_tZzY7E24t3veFaMQYcSP0ncBlOr1EAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=GoXJLgGXVpf8y8SEot2L
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "version": 16777350 }'
+    http_version: 
+  recorded_at: Wed, 05 Jun 2013 14:41:29 GMT
+recorded_with: VCR 2.5.0

@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8888/gui/token.html?output=text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - GUID=QCUnp9BcpaVLftYoQ2ZB; path=/
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: <html><div id='token' style='display:none;'>7P1iDM-j30_D4KpN4veMfy1O12KRXyAdIaSU2A1JsesOOPcU7IJwtBlOr1EAAAAA</div></html>
+    http_version: 
+  recorded_at: Wed, 05 Jun 2013 14:41:29 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=generatesecret&output=json&token=7P1iDM-j30_D4KpN4veMfy1O12KRXyAdIaSU2A1JsesOOPcU7IJwtBlOr1EAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=QCUnp9BcpaVLftYoQ2ZB
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '97'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "rosecret": "RXMAKBNPSWLXHML7WKZJLNDKI5N7ESOJZ", "secret": "LGNHKDANNJJIGN4NU4PBV4IS3TAEWGDS"
+        }'
+    http_version: 
+  recorded_at: Wed, 05 Jun 2013 14:41:29 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=addsyncfolder&name=/home/chris/bt_test&output=json&secret=LGNHKDANNJJIGN4NU4PBV4IS3TAEWGDS&token=7P1iDM-j30_D4KpN4veMfy1O12KRXyAdIaSU2A1JsesOOPcU7IJwtBlOr1EAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=QCUnp9BcpaVLftYoQ2ZB
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '160'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "error": 200, "message": "Selected folder is already added to BitTorrent
+        Sync.", "n": "\/home\/chris\/bt_test", "secret": "LGNHKDANNJJIGN4NU4PBV4IS3TAEWGDS"
+        }'
+    http_version: 
+  recorded_at: Wed, 05 Jun 2013 14:41:29 GMT
+recorded_with: VCR 2.5.0
