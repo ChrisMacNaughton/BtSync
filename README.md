@@ -28,7 +28,7 @@ bittorrent = BtSync.new
 
 A system directory managed with Bittorrent Sync is represented as a ```BtSync::Directory```.
 
-On a ```BtSync::Directory`` you can
+On a ```BtSync::Directory``` you can
 
 - Update the secret
 - change the settings for
