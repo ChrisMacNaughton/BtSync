@@ -1,0 +1,30 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getdir&dir=/home/chris/Documents&output=json&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=viqdjPnu05Y1N0pnFKQ7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ "\/home\/chris\/Documents\/test" ] }'
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
+recorded_with: VCR 2.5.0

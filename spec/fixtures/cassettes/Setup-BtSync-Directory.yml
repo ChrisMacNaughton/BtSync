@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=zKSVCasiyqfzV9LoSf5C; path=/
+      - GUID=viqdjPnu05Y1N0pnFKQ7; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>fJ194qRyI_0LN1nQDN1cNRHlXS7qG9srOMVm7PTugEdLkVIZX92VAIWGsFEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA</div></html>
     http_version: 
   recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getostype&output=json&token=fJ194qRyI_0LN1nQDN1cNRHlXS7qG9srOMVm7PTugEdLkVIZX92VAIWGsFEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=zKSVCasiyqfzV9LoSf5C
+      - GUID=viqdjPnu05Y1N0pnFKQ7
   response:
     status:
       code: 200
@@ -44,14 +44,17 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '17'
+      - '270'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "os": "linux" }'
+      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
+        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
+        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
+        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
   recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
 recorded_with: VCR 2.5.0

@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=wbwVIFfLlCmeQpYzpa5InKk1Dxbc-8tnik1iTb3qnMM6mayySjmz5f_nr1EAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=ELqA5tqCug_yMJadh1_vvAaD-OVAF4IyyFMIhNEPnRGj6WXyk5v9IIWGsFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=mC6ybzSiwtc7IvhuMNSW
+      - GUID=Pn3ujVFV4TcQhRiJLLDQ
   response:
     status:
       code: 200
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '276'
+      - '270'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -26,10 +26,10 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
         "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "1000.0 MB in 2
-        files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
+        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 01:38:37 GMT
+  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
 - request:
     method: get
     uri: http://localhost:8888/gui/token.html?output=text
@@ -49,23 +49,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=TA3LLHxznBGs7j8xatNr; path=/
+      - GUID=om0niLQnUMh1RAUrUB0O; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>fsX9szUZdrG3mFVN7sQJfkKRmAQuH-BTbqUuDP47rf4HJLgQDmjcAB3or1EAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>-IgJlAMTuiVg7HykuWumH1Lh4qFh6XoRbRGDqOKwQOTUoHG35fg_lYWGsFEAAAAA</div></html>
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 01:38:37 GMT
+  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=fsX9szUZdrG3mFVN7sQJfkKRmAQuH-BTbqUuDP47rf4HJLgQDmjcAB3or1EAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=-IgJlAMTuiVg7HykuWumH1Lh4qFh6XoRbRGDqOKwQOTUoHG35fg_lYWGsFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TA3LLHxznBGs7j8xatNr
+      - GUID=om0niLQnUMh1RAUrUB0O
   response:
     status:
       code: 200
@@ -74,7 +74,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '276'
+      - '270'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -83,8 +83,8 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
         "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "1000.0 MB in 2
-        files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
+        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 01:38:37 GMT
+  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
 recorded_with: VCR 2.5.0

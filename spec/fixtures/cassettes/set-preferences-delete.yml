@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=viqdjPnu05Y1N0pnFKQ7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '188'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
+        "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 0, "searchdht": 1, "searchlan":
+        0, "usehosts": 0, "usetracker": 0 } }'
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 12:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=setfolderpref&deletetotrash=0&iswritable=1&name=/home/chris/Documents&output=json&relay=0&searchdht=1&searchlan=0&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA&usehosts=0&usetracker=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=viqdjPnu05Y1N0pnFKQ7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 12:54:30 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=viqdjPnu05Y1N0pnFKQ7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '188'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folderpref": { "deletetotrash": 0, "iswritable": 1, "readonlysecret":
+        "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 0, "searchdht": 1, "searchlan":
+        0, "usehosts": 0, "usetracker": 0 } }'
+    http_version: 
+  recorded_at: Thu, 06 Jun 2013 12:54:30 GMT
+recorded_with: VCR 2.5.0
