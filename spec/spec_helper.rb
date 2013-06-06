@@ -1,6 +1,4 @@
-$:.push File.expand_path("../lib", __FILE__)
 
-require "BtSync"
 require 'vcr'
 require 'webmock'
 
