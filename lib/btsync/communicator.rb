@@ -1,14 +1,15 @@
 module BtCommunicator
   include HTTParty
+  debug_output
   def generate_secret
     res = self.class.get(path('generatesecret'), :headers => {"Cookie" => cookies })
     res.parsed_response["secret"]
   end
   def port
-    @port ||= '8888'
+    @port
   end
   def uri
-    @uri ||= "http://localhost"
+    @uri
   end
   def token force = false
     @token_cache ||= 0
@@ -23,14 +24,18 @@ module BtCommunicator
   def cookies
     @cookies ||= request_token.headers["set-cookie"].split("; ")[0]
   end
+  def root_url
+    "#{uri}:#{port}/"
+  end
   def request_token force = false
     if @request_token.nil? || force
-      @request_token = self.class.get("#{uri}:#{port}/gui/token.html", :query => {:output => :text})
+      @request_token = self.class.get("#{root_url}gui/token.html", :query => {:output => :text})
     else
       @request_token
     end
   end
+
   def path action_name
-    "#{uri}:#{port}/gui/?token=#{token}&action=#{action_name}"
+    "#{root_url}gui/?token=#{token}&action=#{action_name}"
   end
 end

@@ -8,10 +8,12 @@ class BtSync
   include BtCommunicator
   include HTTParty
   default_params :output => 'json'
-
-  def initialize uri=nil, port=nil
-    @uri = uri
-    @port = port
+  debug_output
+  def initialize options = {}
+    @opts = options.symbolize
+    @opts.merge!({:uri => "http://localhost", :port => "8888", :user => "", :password => ""})
+    @uri = @opts[:uri]
+    @port =  @opts[:port]
     @errors = []
     @token_cache = 0
   end
@@ -20,11 +22,11 @@ class BtSync
     @errors = []
     errors
   end
-  def get_folders
+  def folders
     f = get_folder_list["folders"]
     folders = []
     f.each do |folder|
-      folders << Directory.new(folder["name"], folder["secret"])
+      folders << Directory.new(folder["name"], folder["secret"], self)
     end
     folders
   end
@@ -32,7 +34,7 @@ class BtSync
     s = get_folder_list["speed"].split(", ")
     up = s[0].split(" ")
     down = s[1].split(" ")
-    {:up => up[0], :down => down[0], :metric => up[1]}
+    {:up => {:speed => up[0], :metric => up[1]}, :down => {:speed => down[0], :metric => down[1]}}
   end
   def remove_folder folder_name, my_secret = nil
     my_secret ||= secret(folder_name)
@@ -46,7 +48,7 @@ class BtSync
       @errors << res["message"]
       return false
     end
-    Directory.new(folder_name, my_secret)
+    Directory.new(folder_name, my_secret, self)
   end
 
   def get_settings
@@ -89,11 +91,18 @@ class BtSync
 
     attr_reader :secret, :name
 
-    def initialize name, secret
+    def initialize name, secret, btsync
       @name = name
       @secret = secret
+
+      @uri = btsync.uri
+      @port = btsync.port
+
+      find_or_create
+
       @errors = []
     end
+
     def destroy
       self.class.get(path('removefolder'), :query => { :name => name, :secret => secret}, :headers => {"Cookie" => cookies})
       self.instance_variables.each{|v| v = nil}
@@ -109,7 +118,16 @@ class BtSync
         false
       end
     end
-    def get_known_hosts
+    def folders
+      res = self.class.get(path('getdir'), :query => {:dir => @name}, :headers => {"Cookie" => cookies })
+      res.parsed_response["folders"]
+    end
+    def peers
+      res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+      f = res.parsed_response["folders"].select{|f| f["name"] == name}.first
+      f["peers"]
+    end
+    def known_hosts
       res = self.class.get(path('getknownhosts'), :query => {:name => name, :secret => secret}, :headers => {"Cookie" => cookies })
       res["hosts"]
     end
@@ -188,5 +206,27 @@ class BtSync
         0
       end
     end
+    def find_or_create
+      res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+      folder_list = res.parsed_response["folders"]
+      if folder_list.map{|f| f["name"]}.include? name
+        true
+      else
+        res = self.class.get(path('addsyncfolder'), :query => { :name => name, :secret => secret}, :headers => {"Cookie" => cookies})
+      end
+    end
+  end
+end
+class Hash
+  def symbolize
+    r = {}
+    self.each do |k,v|
+      if k.is_a? String
+        r[k.to_symbol] = v
+      else
+        r[k] = v
+      end
+    end
+    r
   end
 end
