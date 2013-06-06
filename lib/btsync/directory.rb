@@ -46,49 +46,37 @@ class BtSync
       res["hosts"]
     end
     def use_tracker=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('usetracker', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('usetracker', opt)
     end
     def use_tracker?
       bool(preferences["usetracker"])
     end
     def use_hosts=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('usehosts', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('usehosts', opt)
     end
     def use_hosts?
       bool(preferences["usehosts"])
     end
     def search_lan=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('searchlan', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('searchlan', opt)
     end
     def search_lan?
       bool(preferences["searchlan"])
     end
     def search_dht=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('searchdht', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('searchdht', opt)
     end
     def search_dht?
       bool(preferences["searchdht"])
     end
     def use_relay=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('relay', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('relay', opt)
     end
     def use_relay?
       bool(preferences["relay"])
     end
     def delete_to_trash=(opt)
-      res = self.class.get(path('setfolderpref'), :query => make_opts('deletetotrash', opt), :headers => {"Cookie" => cookies })
-      @preferences = nil
-      true
+      set_pref('deletetotrash', opt)
     end
     def delete_to_trash?
       bool(preferences["deletetotrash"])
@@ -104,6 +92,10 @@ class BtSync
       preferences["readonlysecret"]
     end
     private
+    def set_pref pref, opt
+      res = self.class.get(path('setfolderpref'), :query => make_opts(pref, opt), :headers => {"Cookie" => cookies })
+      true
+    end
     def default_settings
       opts = {
         'name'=>@name,
