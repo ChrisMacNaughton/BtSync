@@ -1,5 +1,7 @@
 # BtSync
 
+[![Build Status](https://travis-ci.org/ChrisMacNaughton/BtSync.png?branch=master)](https://travis-ci.org/ChrisMacNaughton/BtSync)
+
 BtSync is a library to help you interact with Bittorrent Sync in Ruby
 
 ## Installation
