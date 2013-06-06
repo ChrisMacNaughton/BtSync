@@ -8,7 +8,6 @@ class BtSync
   include BtCommunicator
   include HTTParty
   default_params :output => 'json'
-  debug_output
   def initialize options = {}
     @opts = options.symbolize
     @opts.merge!({:uri => "http://localhost", :port => "8888", :user => "", :password => ""})
@@ -74,7 +73,7 @@ class BtSync
   end
 
   def secret with_dir
-    f = get_folders.select{|folder| folder.name == with_dir}.first
+    f = folders.select{|folder| folder.name == with_dir}.first
     f.secret
   end
   private

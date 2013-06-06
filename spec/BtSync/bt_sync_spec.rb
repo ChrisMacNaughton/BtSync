@@ -9,7 +9,7 @@ describe 'BtSync' do
 
   it "can view a folder list" do
     VCR.use_cassette("get-folders") do
-      @folder = @bt.get_folders.first
+      @folder = @bt.folders.first
     end
     @folder.name.should == "/home/chris/Documents"
   end
@@ -37,7 +37,7 @@ describe 'BtSync' do
       @bt.add_folder '/home/chris/bt_test'
     end
     VCR.use_cassette("add-folder-list") do
-      folders = @bt.get_folders
+      folders = @bt.folders
       folders.count.should == 2
       folder = folders.last
       folder.name.should == "/home/chris/bt_test"
@@ -46,7 +46,7 @@ describe 'BtSync' do
       @bt.remove_folder '/home/chris/bt_test'
     end
     VCR.use_cassette("remove-folder-list") do
-      folders = @bt.get_folders
+      folders = @bt.folders
       folders.count.should == 1
       folder = folders.last
       folder.name.should == "/home/chris/Documents"

@@ -1,6 +1,6 @@
 module BtCommunicator
   include HTTParty
-  debug_output
+
   def generate_secret
     res = self.class.get(path('generatesecret'), :headers => {"Cookie" => cookies })
     res.parsed_response["secret"]
