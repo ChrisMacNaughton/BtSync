@@ -28,7 +28,10 @@ module BtCommunicator
     "#{uri}:#{port}/"
   end
   def request_token force = false
-    if @request_token.nil? || force
+    @last_request ||= 0
+    t = DateTime.now.strftime('%s')
+    if @request_token.nil? || force || (@last_request + 600) < t
+      @last_request = t
       @request_token = self.class.get("#{root_url}gui/token.html", :query => {:output => :text})
     else
       @request_token
