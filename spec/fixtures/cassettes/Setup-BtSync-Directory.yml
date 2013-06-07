@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=viqdjPnu05Y1N0pnFKQ7; path=/
+      - GUID=E3lhmlycmFgf7ESFDvoZ; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>XkuWXu3e6UgIFlZ7Z-DRbgZRZKUuVp5HOH9Z5m1d4B_DS4YoEU_Tqy4fslEAAAAA</div></html>
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
+  recorded_at: Fri, 07 Jun 2013 17:58:06 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=XkuWXu3e6UgIFlZ7Z-DRbgZRZKUuVp5HOH9Z5m1d4B_DS4YoEU_Tqy4fslEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=viqdjPnu05Y1N0pnFKQ7
+      - GUID=E3lhmlycmFgf7ESFDvoZ
   response:
     status:
       code: 200
@@ -44,17 +44,16 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '185'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
-        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
-        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [  ],
+        "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files" } ],
+        "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
+  recorded_at: Fri, 07 Jun 2013 17:58:06 GMT
 recorded_with: VCR 2.5.0

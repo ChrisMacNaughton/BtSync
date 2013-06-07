@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getdir&dir=/home/chris/Documents&output=json&token=iRasMRAah3u6ZZL5nDz7pcjSl9wT5iHuJPM3epeVqG6O57gXNwXWRYWGsFEAAAAA
+    uri: http://localhost:8888/gui/?action=getdir&dir=/home/chris/Documents&output=json&token=5K85aW3p3a6w1SYpvmcT2b8wfIf78_IiXbhF8rWcC89R0jqH44Zm3C4fslEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=viqdjPnu05Y1N0pnFKQ7
+      - GUID=BuR9HOy5Q7UR5Kg4zToj
   response:
     status:
       code: 200
@@ -26,5 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "folders": [ "\/home\/chris\/Documents\/test" ] }'
     http_version: 
-  recorded_at: Thu, 06 Jun 2013 12:54:29 GMT
+  recorded_at: Fri, 07 Jun 2013 17:58:06 GMT
 recorded_with: VCR 2.5.0

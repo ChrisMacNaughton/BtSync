@@ -10,6 +10,11 @@ describe 'BtSync::Directory' do
         @bt)
     end
     VCR.use_cassette('Setup-Directory-Settings') do
+      @bt = BtSync.new
+      @directory = BtSync::Directory.new(
+        '/home/chris/Documents',
+        '6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ',
+        @bt)
       @directory.send('default_settings')
     end
   end
@@ -28,7 +33,7 @@ describe 'BtSync::Directory' do
     VCR.use_cassette("get-peers") do
       @peers = @directory.peers
     end
-    @peers.first["name"].should == "IceyEC Portable"
+    @peers.first.should == nil
   end
   it "can get see known hosts" do
     VCR.use_cassette("get-known-hosts") do
