@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=Asus06qurZWr2qDvKsXi; path=/
+      - GUID=sJU8hiQ5NSVuc2dxB8Dn; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>SvhHJg5rjOclqRLKJYhSzQeL8RtclFrbAxBXBQgx1u12dEXpyuiW-SZ_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>JMujymYftPadRjYW94QZZ0wCyZkNI6XVQaIirlKbKp9tEYOoTdrLl3-DtlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=SvhHJg5rjOclqRLKJYhSzQeL8RtclFrbAxBXBQgx1u12dEXpyuiW-SZ_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=JMujymYftPadRjYW94QZZ0wCyZkNI6XVQaIirlKbKp9tEYOoTdrLl3-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=Asus06qurZWr2qDvKsXi
+      - GUID=sJU8hiQ5NSVuc2dxB8Dn
   response:
     status:
       code: 200
@@ -56,7 +56,7 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
     uri: http://localhost:8888/gui/token.html?output=text
@@ -76,23 +76,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=yYqioBPHHeXhzT2DVn3a; path=/
+      - GUID=8SUzn9h537uwwH67x6wP; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>8SsO0hmMyBG2g2p1sCRPWGNzHvfl8e6X5zlwZYebK-pQNV7jSRTgqCZ_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>_T3OxT7Cd5T_HAJhEBDFxovYrNtHj0CupyC14lEUb4Qk8zd6iYR_Fn-DtlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=8SsO0hmMyBG2g2p1sCRPWGNzHvfl8e6X5zlwZYebK-pQNV7jSRTgqCZ_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=_T3OxT7Cd5T_HAJhEBDFxovYrNtHj0CupyC14lEUb4Qk8zd6iYR_Fn-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=yYqioBPHHeXhzT2DVn3a
+      - GUID=8SUzn9h537uwwH67x6wP
   response:
     status:
       code: 200
@@ -113,5 +113,5 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 recorded_with: VCR 2.5.0

@@ -10,10 +10,17 @@ class BtSync
   include HTTParty
   default_params :output => 'json'
   def initialize options = {}
-    @opts = options.symbolize
-    @opts.merge!({:uri => "http://localhost", :port => "8888", :user => "", :password => ""})
-    @uri = @opts[:uri]
+    @opts = {
+      :protocol => "http",
+      :uri => "localhost",
+      :port => "8888",
+      :user => "",
+      :password => ""}
+    @opts.merge!(options.symbolize)
+    @opts[:uri].gsub!(/^(https?:\/\/){1,}/i, '')
     @port =  @opts[:port]
+    @user = @opts[:user]
+    @pass = @opts[:password]
     @errors = []
     @token_cache = 0
   end

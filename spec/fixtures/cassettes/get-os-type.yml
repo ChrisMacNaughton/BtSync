@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=mVA3VkQ0o2yOQDayNh2B; path=/
+      - GUID=ApytqtfI91r4IdudjTIN; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>bK5SDgBJzkeyQee8ClP7varb6dq28l1QIrkzakkW6sa99WX2xuzUWyd_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>L85OZizUmvgobKcrIincEGwEBxBrhyDZuz5OCKYefCakcYZs3SyviX-DtlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getostype&output=json&token=bK5SDgBJzkeyQee8ClP7varb6dq28l1QIrkzakkW6sa99WX2xuzUWyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getostype&output=json&token=L85OZizUmvgobKcrIincEGwEBxBrhyDZuz5OCKYefCakcYZs3SyviX-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=mVA3VkQ0o2yOQDayNh2B
+      - GUID=ApytqtfI91r4IdudjTIN
   response:
     status:
       code: 200
@@ -53,5 +53,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "os": "linux" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 recorded_with: VCR 2.5.0

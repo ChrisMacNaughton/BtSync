@@ -6,10 +6,22 @@ module BtCommunicator
     res.parsed_response["secret"]
   end
   def port
-    @port
+    @opts[:port]
   end
   def uri
-    @uri
+    @opts[:uri]
+  end
+  def protocol
+    @opts[:protocol]
+  end
+  def user
+    @opts[:user]
+  end
+  def password
+    @opts[:password]
+  end
+  def communication_options
+    @opts
   end
   def token force = false
     @token_cache ||= 0
@@ -25,7 +37,7 @@ module BtCommunicator
     @cookies ||= request_token.headers["set-cookie"].split("; ")[0]
   end
   def root_url
-    "#{uri}:#{port}/"
+    "#{starter}#{uri}:#{port}/"
   end
   def request_token force = false
     @last_request ||= 0
@@ -37,7 +49,9 @@ module BtCommunicator
       @request_token
     end
   end
-
+  def starter
+    "#{protocol}://#{user}:#{password}@"
+  end
   def path action_name
     "#{root_url}gui/?token=#{token}&action=#{action_name}"
   end

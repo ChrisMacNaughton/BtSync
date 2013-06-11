@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=AZzPk3CS3j3yXimuyR0Q; path=/
+      - GUID=h7rsYhEBFJ4m65WcjuHL; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>2GMUUplATleN6fZO7XZDSt2hxVm8ZKhPL3ImlsWdt3yWE1C5T1X5viZ_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>gGxWdAsiDAEXDTQnRHzKZRRO0SksuWhA7pDzg_G-n_h1NmZZfB9oCn-DtlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=2GMUUplATleN6fZO7XZDSt2hxVm8ZKhPL3ImlsWdt3yWE1C5T1X5viZ_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=gGxWdAsiDAEXDTQnRHzKZRRO0SksuWhA7pDzg_G-n_h1NmZZfB9oCn-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=AZzPk3CS3j3yXimuyR0Q
+      - GUID=h7rsYhEBFJ4m65WcjuHL
   response:
     status:
       code: 200
@@ -54,5 +54,5 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 0, "listeningport":
         63754, "portmapping": 1, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 recorded_with: VCR 2.5.0

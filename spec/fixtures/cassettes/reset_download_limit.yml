@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=rz9wWx2uFq0IIyqW0RTZcfIzuGe2zfxoQM0zwcsd9j5lWAodNoumeyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=CjJq3w8fG-rf15Vh44pxG3FwSBLu8AWU3b1PoN-SVD43tCnPkeCxAX-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=oay5ku0uyOjZNnwf5PCB
+      - GUID=rQOaRmGSuftanqRVwf4c
   response:
     status:
       code: 200
@@ -27,16 +27,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 1000,
         "listeningport": 63754, "portmapping": 1, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual1&dlrate=0&listeningport=63754&output=json&portmapping=1&token=rz9wWx2uFq0IIyqW0RTZcfIzuGe2zfxoQM0zwcsd9j5lWAodNoumeyd_tlEAAAAA&ulrate=0
+    uri: http://localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual1&dlrate=0&listeningport=63754&output=json&portmapping=1&token=CjJq3w8fG-rf15Vh44pxG3FwSBLu8AWU3b1PoN-SVD43tCnPkeCxAX-DtlEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=oay5ku0uyOjZNnwf5PCB
+      - GUID=rQOaRmGSuftanqRVwf4c
   response:
     status:
       code: 200
@@ -54,16 +54,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=rz9wWx2uFq0IIyqW0RTZcfIzuGe2zfxoQM0zwcsd9j5lWAodNoumeyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=CjJq3w8fG-rf15Vh44pxG3FwSBLu8AWU3b1PoN-SVD43tCnPkeCxAX-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=oay5ku0uyOjZNnwf5PCB
+      - GUID=rQOaRmGSuftanqRVwf4c
   response:
     status:
       code: 200
@@ -82,5 +82,5 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 0, "listeningport":
         63754, "portmapping": 1, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 recorded_with: VCR 2.5.0

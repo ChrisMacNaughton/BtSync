@@ -9,8 +9,7 @@ class BtSync
       @name = name
       @secret = secret
 
-      @uri = btsync.uri
-      @port = btsync.port
+      @opts = btsync.communication_options
 
       find_or_create
 

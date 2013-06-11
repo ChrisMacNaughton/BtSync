@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -28,16 +28,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -57,16 +57,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -86,16 +86,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -115,16 +115,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -144,16 +144,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NCV94kseZx2zMNIs5X23
+      - GUID=SZGEavWRWlylZwpb4y1U
   response:
     status:
       code: 200
@@ -173,5 +173,5 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 recorded_with: VCR 2.5.0

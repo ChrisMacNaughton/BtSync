@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=M97J_F2siEk5HvGVBlrq-V46L2t5pVEIZ7E2atc-G0p7CEwaqMqz4Cd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=0yGezY2QZeVy7GPzaV-TQ6SuOMns8TlPgbHND059Qv-NnsquBvqIln-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=KxAcmT2sDhFgFWdkWpiD
+      - GUID=YvUwERzuA6KDtWx5gBqG
   response:
     status:
       code: 200
@@ -29,7 +29,7 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
     uri: http://localhost:8888/gui/token.html?output=text
@@ -49,23 +49,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=smaeuNmwV87y0hq9bPsK; path=/
+      - GUID=gzJ3QUMhgu6Ar87exf88; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>-KuDNpd8P-YgIsqnPXiJrHwoQMTnX4d4JPM3ehwaDfmO57gXLdqbzSd_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>B8XISDe9E7nDi2RefgjKq50dzX1VVx7tQqYN4dvnpk2nHbJey0Cx3n-DtlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=-KuDNpd8P-YgIsqnPXiJrHwoQMTnX4d4JPM3ehwaDfmO57gXLdqbzSd_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=B8XISDe9E7nDi2RefgjKq50dzX1VVx7tQqYN4dvnpk2nHbJey0Cx3n-DtlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=smaeuNmwV87y0hq9bPsK
+      - GUID=gzJ3QUMhgu6Ar87exf88
   response:
     status:
       code: 200
@@ -86,5 +86,5 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
 recorded_with: VCR 2.5.0
