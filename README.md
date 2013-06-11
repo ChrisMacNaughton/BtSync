@@ -44,7 +44,7 @@ On a ```BtSync::Directory``` you can
 
 ## Todo
 
-[] Manage predefined hosts
+[x] Manage predefined hosts
 [] Allow user authentication
 
 ## Known Issues
