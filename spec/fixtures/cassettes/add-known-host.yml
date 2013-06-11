@@ -2,40 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/token.html?output=text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=3BTaz7xPi4AvIOaP2RBT; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>gfD_aQZyinvp1LfKjRzJxis5VjktEEzNTAnWH57g3i7JZo7KlrklZWR6tlEAAAAA</div></html>
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=gfD_aQZyinvp1LfKjRzJxis5VjktEEzNTAnWH57g3i7JZo7KlrklZWR6tlEAAAAA
+    uri: http://localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/chris/Documents&output=json&port=12345&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=3BTaz7xPi4AvIOaP2RBT
+      - GUID=JFCPgyk8y19MzeBKNsbG
   response:
     status:
       code: 200
@@ -44,17 +17,42 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '4'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
-        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
-        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getknownhosts&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=JFCPgyk8y19MzeBKNsbG
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
+        1, "peer": "10.0.1.254:12345" } ] }'
     http_version: 
   recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
 recorded_with: VCR 2.5.0

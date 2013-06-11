@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=5K85aW3p3a6w1SYpvmcT2b8wfIf78_IiXbhF8rWcC89R0jqH44Zm3C4fslEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BuR9HOy5Q7UR5Kg4zToj
+      - GUID=JFCPgyk8y19MzeBKNsbG
   response:
     status:
       code: 200
@@ -28,16 +28,16 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 0, "searchlan":
         0, "usehosts": 0, "usetracker": 0 } }'
     http_version: 
-  recorded_at: Fri, 07 Jun 2013 17:58:07 GMT
+  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/chris/Documents&output=json&relay=1&searchdht=1&searchlan=0&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=5K85aW3p3a6w1SYpvmcT2b8wfIf78_IiXbhF8rWcC89R0jqH44Zm3C4fslEAAAAA&usehosts=0&usetracker=0
+    uri: http://localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/chris/Documents&output=json&relay=1&searchdht=1&searchlan=0&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA&usehosts=0&usetracker=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BuR9HOy5Q7UR5Kg4zToj
+      - GUID=JFCPgyk8y19MzeBKNsbG
   response:
     status:
       code: 200
@@ -55,16 +55,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 07 Jun 2013 17:58:07 GMT
+  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=5K85aW3p3a6w1SYpvmcT2b8wfIf78_IiXbhF8rWcC89R0jqH44Zm3C4fslEAAAAA
+    uri: http://localhost:8888/gui/?action=getfolderpref&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BuR9HOy5Q7UR5Kg4zToj
+      - GUID=JFCPgyk8y19MzeBKNsbG
   response:
     status:
       code: 200
@@ -84,5 +84,5 @@ http_interactions:
         "RL5F2W34L7MRTS2S6JOXZHQM2QNTJUODS", "relay": 1, "searchdht": 1, "searchlan":
         0, "usehosts": 0, "usetracker": 0 } }'
     http_version: 
-  recorded_at: Fri, 07 Jun 2013 17:58:07 GMT
+  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
 recorded_with: VCR 2.5.0
