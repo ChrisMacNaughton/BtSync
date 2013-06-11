@@ -33,13 +33,27 @@ describe 'BtSync::Directory' do
     VCR.use_cassette("get-peers") do
       @peers = @directory.peers
     end
-    @peers.first.should == nil
+    @peers.first.should == {"direct"=>1, "name"=>"IceyEC Portable", "status"=>"Synced on 06/05/13 20:52:35"}
   end
-  it "can get see known hosts" do
+  it "can get known hosts" do
     VCR.use_cassette("get-known-hosts") do
       @hosts = @directory.known_hosts
     end
-    @hosts.first["peer"].should == "192.168.1.5:45685"
+    @hosts[0].should == "192.168.1.5:45685"
+  end
+  it "can add a known host" do
+    VCR.use_cassette('add-known-host') do
+      @directory.add_host('10.0.1.254', '12345')
+      @hosts = @directory.known_hosts
+    end
+    @hosts[1].should == "10.0.1.254:12345"
+  end
+  it "can remove a known host" do
+    VCR.use_cassette('remove-known-host') do
+      @directory.remove_host(1)
+      @hosts = @directory.known_hosts
+    end
+    @hosts.values.should_not include '10.0.1.254:12345'
   end
   it "can check it's settings" do
     VCR.use_cassette("get-preferences") do

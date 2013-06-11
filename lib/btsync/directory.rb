@@ -43,7 +43,24 @@ class BtSync
     end
     def known_hosts
       res = self.class.get(path('getknownhosts'), :query => {:name => name, :secret => secret}, :headers => {"Cookie" => cookies })
-      res["hosts"]
+      hosts = {}
+      res["hosts"].map{|h| hosts[h["index"]] = h["peer"]}
+      hosts
+    end
+    def add_host host, port
+      res = self.class.get(path('addknownhosts'), :query =>{:name => name, :secret => secret, :addr =>host, :port => port}, :headers => {"Cookie" => cookies })
+      true
+    end
+    def remove_host index
+      res = self.class.get(path('removeknownhosts'), :query =>{:name => name, :secret => secret, :index => index}, :headers => {"Cookie" => cookies })
+      if res.parsed_response != {}
+        res.parsed_response
+      else
+        true
+      end
+    end
+    def remove_host_by_ip ip, port = nil
+      @hosts = known_hosts
     end
     def use_tracker=(opt)
       set_pref('usetracker', opt)
