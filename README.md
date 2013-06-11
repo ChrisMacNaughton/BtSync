@@ -56,12 +56,12 @@ On a ```BtSync::Directory``` you can
 
 ## Todo
 
-[x] Manage predefined hosts
-[x] Allow user authentication
+- [x] Manage predefined hosts
+- [x] Allow user authentication
 
 ## Known Issues
 
-[] Bittorrent Sync must be run on a Linux system
+- [] Bittorrent Sync must be run on a Linux system
 
 ## Contributing
 
