@@ -25,6 +25,7 @@ Or install it yourself as:
 
 ```ruby
 bittorrent = BtSync.new(options)
+```
 
 options is a hash that can contain any of the following options.  The values shown are the defaults if no argument is passed in
 
