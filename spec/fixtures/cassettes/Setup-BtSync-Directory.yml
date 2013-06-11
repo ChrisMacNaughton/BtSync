@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=3BTaz7xPi4AvIOaP2RBT; path=/
+      - GUID=qBwZrYXOVtLgRbGW1MXz; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>gfD_aQZyinvp1LfKjRzJxis5VjktEEzNTAnWH57g3i7JZo7KlrklZWR6tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>pFRDraGUk5u3XH4vb0NSpd1w-knKwk19dTZmWZFZ5X6o_deHZ_GEVid_tlEAAAAA</div></html>
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
+  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=gfD_aQZyinvp1LfKjRzJxis5VjktEEzNTAnWH57g3i7JZo7KlrklZWR6tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=pFRDraGUk5u3XH4vb0NSpd1w-knKwk19dTZmWZFZ5X6o_deHZ_GEVid_tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=3BTaz7xPi4AvIOaP2RBT
+      - GUID=qBwZrYXOVtLgRbGW1MXz
   response:
     status:
       code: 200
@@ -56,5 +56,5 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
+  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 recorded_with: VCR 2.5.0

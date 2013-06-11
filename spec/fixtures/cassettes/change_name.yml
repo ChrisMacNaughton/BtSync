@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=Asus06qurZWr2qDvKsXi; path=/
+      - GUID=dWDNNsB4sSbQjUzEprdn; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>SvhHJg5rjOclqRLKJYhSzQeL8RtclFrbAxBXBQgx1u12dEXpyuiW-SZ_tlEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>caCfMFG-xxQhlY1I-z7pz8LZ7V3xJ_BHJBkE0MVX8LcDRT9ByFfOUCd_tlEAAAAA</div></html>
     http_version: 
   recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=SvhHJg5rjOclqRLKJYhSzQeL8RtclFrbAxBXBQgx1u12dEXpyuiW-SZ_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=caCfMFG-xxQhlY1I-z7pz8LZ7V3xJ_BHJBkE0MVX8LcDRT9ByFfOUCd_tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=Asus06qurZWr2qDvKsXi
+      - GUID=dWDNNsB4sSbQjUzEprdn
   response:
     status:
       code: 200
@@ -44,55 +44,26 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '119'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
-        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
-        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+      string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 0, "listeningport":
+        63754, "portmapping": 1, "ulrate": 0 } }'
     http_version: 
   recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/token.html?output=text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=yYqioBPHHeXhzT2DVn3a; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>8SsO0hmMyBG2g2p1sCRPWGNzHvfl8e6X5zlwZYebK-pQNV7jSRTgqCZ_tlEAAAAA</div></html>
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=8SsO0hmMyBG2g2p1sCRPWGNzHvfl8e6X5zlwZYebK-pQNV7jSRTgqCZ_tlEAAAAA
+    uri: http://localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=1&token=caCfMFG-xxQhlY1I-z7pz8LZ7V3xJ_BHJBkE0MVX8LcDRT9ByFfOUCd_tlEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=yYqioBPHHeXhzT2DVn3a
+      - GUID=dWDNNsB4sSbQjUzEprdn
   response:
     status:
       code: 200
@@ -101,17 +72,42 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '4'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
-        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
-        } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
+- request:
+    method: get
+    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=caCfMFG-xxQhlY1I-z7pz8LZ7V3xJ_BHJBkE0MVX8LcDRT9ByFfOUCd_tlEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=dWDNNsB4sSbQjUzEprdn
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
+        63754, "portmapping": 1, "ulrate": 0 } }'
     http_version: 
   recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 recorded_with: VCR 2.5.0

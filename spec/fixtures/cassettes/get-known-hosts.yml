@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getknownhosts&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getknownhosts&name=/home/chris/Documents&output=json&secret=6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=JFCPgyk8y19MzeBKNsbG
+      - GUID=NCV94kseZx2zMNIs5X23
   response:
     status:
       code: 200
@@ -26,5 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" } ] }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
+  recorded_at: Tue, 11 Jun 2013 01:36:42 GMT
 recorded_with: VCR 2.5.0

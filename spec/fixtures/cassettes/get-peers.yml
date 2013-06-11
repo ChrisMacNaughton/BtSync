@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=dN1XqmXOQlgnI4vhPQ6FnJWnbetttbmPE657K787Ix-FSzdfv4VqZmR6tlEAAAAA
+    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=Ib1IcwdDEncCfOjtZIGeyE5s7LIoaDHHR_74JMvlkwdyv-dN0avGVyd_tlEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=JFCPgyk8y19MzeBKNsbG
+      - GUID=NCV94kseZx2zMNIs5X23
   response:
     status:
       code: 200
@@ -29,5 +29,5 @@ http_interactions:
         } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
         } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:16:23 GMT
+  recorded_at: Tue, 11 Jun 2013 01:36:41 GMT
 recorded_with: VCR 2.5.0

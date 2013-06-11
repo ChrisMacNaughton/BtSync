@@ -30,6 +30,35 @@ class BtSync
     end
     folders
   end
+  def upload_limit
+    get_settings["ulrate"].to_i
+  end
+  def download_limit
+    get_settings["dlrate"].to_i
+  end
+  def device_name
+    get_settings["devicename"]
+  end
+  def listening_port
+    get_settings["listeningport"].to_i
+  end
+  def upload_limit= opt
+    change_setting "ulrate", opt
+  end
+  def download_limit= opt
+    change_setting "dlrate", opt
+  end
+  def device_name= opt
+    change_setting "devicename", opt
+  end
+  def listening_port= opt
+    change_setting "listeningport", opt
+  end
+  def change_setting type, opt
+    options = get_settings.merge!({type => opt})
+
+    res = self.class.get(path('setsettings'), :query => options, :headers => {"Cookie" => cookies })
+  end
   def get_speed
     s = get_folder_list["speed"].split(", ")
     up = s[0].split(" ")
