@@ -24,7 +24,18 @@ Or install it yourself as:
 ### Using BtSync
 
 ```ruby
-bittorrent = BtSync.new
+bittorrent = BtSync.new(options)
+
+options is a hash that can contain any of the following options.  The values shown are the defaults if no argument is passed in
+
+```ruby
+{
+  :protocol => "http",
+  :uri => "localhost",
+  :port => "8888",
+  :user => "",
+  :password => ""
+}
 ```
 
 ####BtSync::Directory
@@ -45,7 +56,7 @@ On a ```BtSync::Directory``` you can
 ## Todo
 
 [x] Manage predefined hosts
-[] Allow user authentication
+[x] Allow user authentication
 
 ## Known Issues
 
