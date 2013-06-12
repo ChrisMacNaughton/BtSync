@@ -2,40 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/token.html?output=text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=TsFXrmm0YbYlyiYDtWmj; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>rShA3r5V4Pq3OYq4DTOXiqxiE6PP9LaqjqqF368g7y_UfyKXU2uvb3-DtlEAAAAA</div></html>
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=rShA3r5V4Pq3OYq4DTOXiqxiE6PP9LaqjqqF368g7y_UfyKXU2uvb3-DtlEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=u_MRSC7A_4Y-0yCWDt6uQvH5BzWrWTuCEuU3A8fvQlrsHlXYAZ4cFgPBuFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TsFXrmm0YbYlyiYDtWmj
+      - GUID=7Sb1dvknwuyiiKy9xvYv
   response:
     status:
       code: 200
@@ -44,26 +17,26 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '119'
+      - '132'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 0, "listeningport":
-        63754, "portmapping": 1, "ulrate": 0 } }'
+      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
+        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual1&dlrate=0&listeningport=63754&output=json&portmapping=1&token=rShA3r5V4Pq3OYq4DTOXiqxiE6PP9LaqjqqF368g7y_UfyKXU2uvb3-DtlEAAAAA&ulrate=1000
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=u_MRSC7A_4Y-0yCWDt6uQvH5BzWrWTuCEuU3A8fvQlrsHlXYAZ4cFgPBuFEAAAAA&ulrate=1000
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TsFXrmm0YbYlyiYDtWmj
+      - GUID=7Sb1dvknwuyiiKy9xvYv
   response:
     status:
       code: 200
@@ -81,16 +54,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getsettings&output=json&token=rShA3r5V4Pq3OYq4DTOXiqxiE6PP9LaqjqqF368g7y_UfyKXU2uvb3-DtlEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=u_MRSC7A_4Y-0yCWDt6uQvH5BzWrWTuCEuU3A8fvQlrsHlXYAZ4cFgPBuFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TsFXrmm0YbYlyiYDtWmj
+      - GUID=7Sb1dvknwuyiiKy9xvYv
   response:
     status:
       code: 200
@@ -99,15 +72,15 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '122'
+      - '135'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual1", "dlrate": 0, "listeningport":
-        63754, "portmapping": 1, "ulrate": 1000 } }'
+      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
+        0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 recorded_with: VCR 2.5.0

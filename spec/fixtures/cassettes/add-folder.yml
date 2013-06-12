@@ -2,40 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/token.html?output=text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=YvUwERzuA6KDtWx5gBqG; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>0yGezY2QZeVy7GPzaV-TQ6SuOMns8TlPgbHND059Qv-NnsquBvqIln-DtlEAAAAA</div></html>
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/?action=generatesecret&output=json&token=0yGezY2QZeVy7GPzaV-TQ6SuOMns8TlPgbHND059Qv-NnsquBvqIln-DtlEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=generatesecret&output=json&token=u_MRSC7A_4Y-0yCWDt6uQvH5BzWrWTuCEuU3A8fvQlrsHlXYAZ4cFgPBuFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=YvUwERzuA6KDtWx5gBqG
+      - GUID=7Sb1dvknwuyiiKy9xvYv
   response:
     status:
       code: 200
@@ -51,19 +24,19 @@ http_interactions:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "rosecret": "RU35YQ4T6PE5F5FTG7CHZ7NQJ2KI5G6B2", "secret": "FEEBRD6KX6NFZYJRVVN6WKGONI467MZE"
+      string: ! '{ "rosecret": "RBCVG2UQM47GUM6COGNJUJX56HERKGVXH", "secret": "WQ2DBPS2K7MPPANC6PAQQKYW5H64FS2Z"
         }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=addsyncfolder&name=/home/chris/bt_test&output=json&secret=FEEBRD6KX6NFZYJRVVN6WKGONI467MZE&token=0yGezY2QZeVy7GPzaV-TQ6SuOMns8TlPgbHND059Qv-NnsquBvqIln-DtlEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addsyncfolder&name=/tmp&output=json&secret=WQ2DBPS2K7MPPANC6PAQQKYW5H64FS2Z&token=u_MRSC7A_4Y-0yCWDt6uQvH5BzWrWTuCEuU3A8fvQlrsHlXYAZ4cFgPBuFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=YvUwERzuA6KDtWx5gBqG
+      - GUID=7Sb1dvknwuyiiKy9xvYv
   response:
     status:
       code: 200
@@ -72,72 +45,15 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '14'
+      - '143'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "error": 0 }'
+      string: ! '{ "error": 200, "message": "Selected folder is already added to BitTorrent
+        Sync.", "n": "\/tmp", "secret": "WQ2DBPS2K7MPPANC6PAQQKYW5H64FS2Z" }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/token.html?output=text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=sXDdY5BtJr5UIBaTJLJm; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>wz7jsZf0pne0IsvsXJD5Dy4E1zc3Yp_8gTkIed8I4Hj7_mMuqgyqen-DtlEAAAAA</div></html>
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
-- request:
-    method: get
-    uri: http://localhost:8888/gui/?action=getsyncfolders&output=json&token=wz7jsZf0pne0IsvsXJD5Dy4E1zc3Yp_8gTkIed8I4Hj7_mMuqgyqen-DtlEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=sXDdY5BtJr5UIBaTJLJm
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '395'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folders": [ { "name": "\/home\/chris\/Documents", "peers": [ {
-        "direct": 1, "name": "IceyEC Portable", "status": "Synced on 06\/05\/13 20:52:35"
-        } ], "secret": "6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ", "size": "0 B in 0 files"
-        }, { "name": "\/home\/chris\/bt_test", "peers": [  ], "secret": "FEEBRD6KX6NFZYJRVVN6WKGONI467MZE",
-        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
-    http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:13 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 recorded_with: VCR 2.5.0
