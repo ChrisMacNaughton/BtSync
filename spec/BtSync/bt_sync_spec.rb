@@ -4,6 +4,10 @@ describe 'BtSync' do
   before(:each) do
     VCR.use_cassette("Setup-BtSync") do
       @bt = BtSync.new
+      @bt.add_folder '/home/vagrant'
+      @bt.listening_port = 63754
+      @bt.upload_limit = 0
+      @bt.device_name = "precise32 - Default Instance"
     end
   end
 
@@ -11,13 +15,13 @@ describe 'BtSync' do
     VCR.use_cassette("get-folders") do
       @folder = @bt.folders.first
     end
-    @folder.name.should == "/home/chris/Documents"
+    @folder.name.should == "/home/vagrant"
   end
   it "can view settings" do
     VCR.use_cassette("get-settings") do
       @settings = @bt.get_settings
     end
-    @settings["devicename"].should == "IceyEC-Virtual1"
+    @settings["devicename"].should == "precise32 - Default Instance"
     @settings["listeningport"].should == 63754
   end
   it "can get listening port" do
@@ -37,7 +41,7 @@ describe 'BtSync' do
   end
   it "can get device name" do
     VCR.use_cassette("get-settings") do
-      @bt.device_name.should == "IceyEC-Virtual1"
+      @bt.device_name.should == "precise32 - Default Instance"
     end
   end
   it "can change the device_name" do
@@ -46,8 +50,8 @@ describe 'BtSync' do
       @bt.device_name.should == "IceyEC-Virtual2"
     end
     VCR.use_cassette('reset_device_name') do
-      @bt.device_name = "IceyEC-Virtual1"
-      @bt.device_name.should == "IceyEC-Virtual1"
+      @bt.device_name = "precise32 - Default Instance"
+      @bt.device_name.should == "precise32 - Default Instance"
     end
   end
   it "can change the upload limit" do
@@ -94,22 +98,22 @@ describe 'BtSync' do
   end
   it "can add and delete a folder" do
     VCR.use_cassette("add-folder") do
-      @bt.add_folder '/home/chris/bt_test'
+      @bt.add_folder '/tmp'
     end
     VCR.use_cassette("add-folder-list") do
       folders = @bt.folders
       folders.count.should == 2
       folder = folders.last
-      folder.name.should == "/home/chris/bt_test"
+      folder.name.should == "/tmp"
     end
     VCR.use_cassette("remove-folder") do
-      @bt.remove_folder '/home/chris/bt_test'
+      @bt.remove_folder '/tmp'
     end
     VCR.use_cassette("remove-folder-list") do
       folders = @bt.folders
       folders.count.should == 1
       folder = folders.last
-      folder.name.should == "/home/chris/Documents"
+      folder.name.should == "/home/vagrant"
     end
   end
 end
