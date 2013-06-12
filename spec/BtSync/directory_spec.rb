@@ -4,51 +4,44 @@ describe 'BtSync::Directory' do
   before(:each) do
     VCR.use_cassette("Setup-BtSync-Directory") do
       @bt = BtSync.new
-      @directory = BtSync::Directory.new(
-        '/home/chris/Documents',
-        '6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ',
-        @bt)
+      @bt.add_folder '/home/vagrant'
+      @bt.listening_port = 63754
+      @bt.upload_limit = 0
+      @bt.device_name = "precise32 - Default Instance"
+      @directory = @bt.folders.first
     end
     VCR.use_cassette('Setup-Directory-Settings') do
-      @bt = BtSync.new
-      @directory = BtSync::Directory.new(
-        '/home/chris/Documents',
-        '6PX74LIR2RA2FF2W3DC25MG2CF6SQDSJ',
-        @bt)
       @directory.send('default_settings')
+      @directory.add_host('192.168.1.5','45685')
     end
   end
   after(:each) do
     VCR.use_cassette('Setup-Directory-Settings') do
       @directory.send('default_settings')
     end
+    VCR.use_cassette('Remove-Default-Host') do
+      @directory.remove_host 0
+    end
   end
   it "can view contained folders" do
     VCR.use_cassette("view-folders") do
       @folders = @directory.folders
     end
-    @folders.first.should == "/home/chris/Documents/test"
+    @folders.should == []
   end
   it "can get a list of peers" do
     VCR.use_cassette("get-peers") do
       @peers = @directory.peers
     end
-    @peers.first.should == {"direct"=>1, "name"=>"IceyEC Portable", "status"=>"Synced on 06/05/13 20:52:35"}
+    @peers.should == []
   end
-  it "can get known hosts" do
-    VCR.use_cassette("get-known-hosts") do
-      @hosts = @directory.known_hosts
-    end
-    @hosts[0].should == "192.168.1.5:45685"
-  end
-  it "can add a known host" do
+  it "can add and remove a known host" do
     VCR.use_cassette('add-known-host') do
       @directory.add_host('10.0.1.254', '12345')
       @hosts = @directory.known_hosts
     end
     @hosts[1].should == "10.0.1.254:12345"
-  end
-  it "can remove a known host" do
+
     VCR.use_cassette('remove-known-host') do
       @directory.remove_host(1)
       @hosts = @directory.known_hosts

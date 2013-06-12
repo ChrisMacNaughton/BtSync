@@ -1,8 +1,9 @@
 module BtCommunicator
   include HTTParty
-
+  disable_rails_query_string_format
+  default_params :output => 'json'
   def generate_secret
-    res = self.class.get(path('generatesecret'), :headers => {"Cookie" => cookies })
+    res = get(path('generatesecret'))
     res.parsed_response["secret"]
   end
   def port
@@ -23,6 +24,9 @@ module BtCommunicator
   def communication_options
     @opts
   end
+  def auth
+    {:username => user, :password => password}
+  end
   def token force = false
     @token_cache ||= 0
     time = DateTime.now.strftime("%s").to_i
@@ -39,18 +43,24 @@ module BtCommunicator
   def root_url
     "#{starter}#{uri}:#{port}/"
   end
+
+  def get path, opts = {}
+    opts = {:headers=>{"Cookie" => cookies}, :query => {}, :basic_auth => auth}.merge(opts)
+    self.class.get(path, opts)
+  end
+
   def request_token force = false
     @last_request ||= 0
     t = DateTime.now.strftime('%s').to_i
     if @request_token.nil? || force || (@last_request + 600) < t
       @last_request = t
-      @request_token = self.class.get("#{root_url}gui/token.html", :query => {:output => :text})
+      @request_token = self.class.get("#{root_url}gui/token.html", :basic_auth => auth)
     else
       @request_token
     end
   end
   def starter
-    "#{protocol}://#{user}:#{password}@"
+    "#{protocol}://"
   end
   def path action_name
     "#{root_url}gui/?token=#{token}&action=#{action_name}"

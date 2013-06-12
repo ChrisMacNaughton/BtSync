@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:8888/gui/?action=getdir&dir=/home/chris/Documents&output=json&token=cNJuLdTzhAVEgK83V3Ai3F9LGEGb2oDNWAwa1BWst7Dpo45MpwWH93-DtlEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=RZbVuwWEheFdAfByFpevSH6m3_t2y6Brna0IR68P0vD7nryy2Ktd6gTBuFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=SZGEavWRWlylZwpb4y1U
+      - GUID=TotE2NElyDGhazP4Fk3b
   response:
     status:
       code: 200
@@ -17,14 +17,14 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '51'
+      - '19'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "folders": [ "\/home\/chris\/Documents\/test" ] }'
+      string: ! '{ "folders": [  ] }'
     http_version: 
-  recorded_at: Tue, 11 Jun 2013 01:55:14 GMT
+  recorded_at: Wed, 12 Jun 2013 18:42:12 GMT
 recorded_with: VCR 2.5.0
