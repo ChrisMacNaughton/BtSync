@@ -14,8 +14,8 @@ class BtSync
       :protocol => "http",
       :uri => "localhost",
       :port => "8888",
-      :user => "",
-      :password => ""}
+      :user => "admin",
+      :password => "AdminPassword"}
     @opts.merge!(options.symbolize)
     @opts[:uri].gsub!(/^(https?:\/\/){1,}/i, '')
     @port =  @opts[:port]
@@ -64,7 +64,7 @@ class BtSync
   def change_setting type, opt
     options = get_settings.merge!({type => opt})
 
-    res = self.class.get(path('setsettings'), :query => options, :headers => {"Cookie" => cookies })
+    res = get(path('setsettings'), :query => options)
   end
   def get_speed
     s = get_folder_list["speed"].split(", ")
@@ -74,12 +74,12 @@ class BtSync
   end
   def remove_folder folder_name, my_secret = nil
     my_secret ||= secret(folder_name)
-    res = self.class.get(path('removefolder'), :query => { :name => folder_name, :secret => my_secret}, :headers => {"Cookie" => cookies})
+    res = get(path('removefolder'), :query => { :name => folder_name, :secret => my_secret})
     true
   end
   def add_folder folder_name, my_secret = nil
     my_secret ||= generate_secret
-    res = self.class.get(path('addsyncfolder'), :query => { :name => folder_name, :secret => my_secret}, :headers => {"Cookie" => cookies})
+    res = get(path('addsyncfolder'), :query => { :name => folder_name, :secret => my_secret})
     unless res["error"] == 0
       @errors << res["message"]
       return false
@@ -88,25 +88,25 @@ class BtSync
   end
 
   def get_settings
-    res = self.class.get(path('getsettings'), :headers => {"Cookie" => cookies })
+    res = get(path('getsettings'))
     res.parsed_response["settings"]
   end
   def get_os_type
-    res = self.class.get(path('getostype'), :headers => {"Cookie" => cookies })
+    res = get(path('getostype'))
     res.parsed_response["os"]
   end
   def get_version
-    res = self.class.get(path('getversion'), :headers => {"Cookie" => cookies })
+    res = get(path('getversion'))
     res.parsed_response["version"]
   end
   def check_new_version
-    res = self.class.get(path('checknewversion'), :headers => {"Cookie" => cookies })
+    res = get(path('checknewversion'))
     res.parsed_response["version"]
   end
 
-  def get_dir with_dir
-    res = self.class.get(path('getdir'), :query => {:dir => with_dir}, :headers => {"Cookie" => cookies })
-    res.parsed_response["folders"]
+  def get_dir with_dir = "/"
+    res = get(path('getdir'), :query => {"dir" => with_dir})
+    res.parsed_response["folders"].map{|f| f.gsub!('//', '/')}
   end
 
   def secret with_dir
@@ -116,7 +116,7 @@ class BtSync
   private
 
   def get_folder_list
-    res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+    res = get(path('getsyncfolders'))
     @folder_list = res.parsed_response
   end
 end

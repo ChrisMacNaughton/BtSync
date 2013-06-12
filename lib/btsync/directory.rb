@@ -17,12 +17,12 @@ class BtSync
     end
 
     def destroy
-      self.class.get(path('removefolder'), :query => { :name => name, :secret => secret}, :headers => {"Cookie" => cookies})
+      get(path('removefolder'), :query => { :name => name, :secret => secret} )
       self.instance_variables.each{|v| v = nil}
     end
     def update_secret new_secret = nil
       new_secret ||= generate_secret
-      res = self.class.get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret}, :headers => {"Cookie" => cookies})
+      res = get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret} )
       if res.parsed_response != "{}" && res.parsed_response != '\r\ninvalid request'
         @secret = new_secret
         true
@@ -32,26 +32,26 @@ class BtSync
       end
     end
     def folders
-      res = self.class.get(path('getdir'), :query => {:dir => @name}, :headers => {"Cookie" => cookies })
+      res = get(path('getdir'), :query => {:dir => @name})
       res.parsed_response["folders"]
     end
     def peers
-      res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+      res = get(path('getsyncfolders') )
       f = res.parsed_response["folders"].select{|f| f["name"] == name}.first
       f["peers"]
     end
     def known_hosts
-      res = self.class.get(path('getknownhosts'), :query => {:name => name, :secret => secret}, :headers => {"Cookie" => cookies })
+      res = get(path('getknownhosts'), :query => {:name => name, :secret => secret})
       hosts = {}
       res["hosts"].map{|h| hosts[h["index"]] = h["peer"]}
       hosts
     end
     def add_host host, port
-      res = self.class.get(path('addknownhosts'), :query =>{:name => name, :secret => secret, :addr =>host, :port => port}, :headers => {"Cookie" => cookies })
+      res = get(path('addknownhosts'), :query =>{:name => name, :secret => secret, :addr =>host, :port => port} )
       true
     end
     def remove_host index
-      res = self.class.get(path('removeknownhosts'), :query =>{:name => name, :secret => secret, :index => index}, :headers => {"Cookie" => cookies })
+      res = get(path('removeknownhosts'), :query =>{:name => name, :secret => secret, :index => index} )
       if res.parsed_response != {}
         res.parsed_response
       else
@@ -101,7 +101,7 @@ class BtSync
       bool(preferences["iswritable"])
     end
     def preferences
-      res = self.class.get(path('getfolderpref'), :query => { :name => @name, :secret => @secret}, :headers => {"Cookie" => cookies})
+      res = get(path('getfolderpref'), :query => { :name => @name, :secret => @secret})
       res.parsed_response["folderpref"]
     end
     def read_only_secret
@@ -109,7 +109,7 @@ class BtSync
     end
     private
     def set_pref pref, opt
-      res = self.class.get(path('setfolderpref'), :query => make_opts(pref, opt), :headers => {"Cookie" => cookies })
+      res = get(path('setfolderpref'), :query => make_opts(pref, opt) )
       true
     end
     def default_settings
@@ -123,7 +123,7 @@ class BtSync
         'deletetotrash' => 1,
         'usehosts' => 1
       }
-      self.class.get(path('setfolderpref'), :query => opts, :headers => {"Cookie" => cookies })
+      get(path('setfolderpref'), :query => opts )
     end
     def make_opts name, opt
      opts = preferences
@@ -148,12 +148,12 @@ class BtSync
       end
     end
     def find_or_create
-      res = self.class.get(path('getsyncfolders'), :headers => {"Cookie" => cookies })
+      res = get(path('getsyncfolders'))
       folder_list = res.parsed_response["folders"]
       if folder_list.map{|f| f["name"]}.include? name
         true
       else
-        res = self.class.get(path('addsyncfolder'), :query => { :name => name, :secret => secret}, :headers => {"Cookie" => cookies})
+        res = get(path('addsyncfolder'), :query => { :name => name, :secret => secret})
       end
     end
   end
