@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ChrisMacNaughton/BtSync.png?branch=master)](https://travis-ci.org/ChrisMacNaughton/BtSync)
 [![Code Climate](https://codeclimate.com/github/ChrisMacNaughton/BtSync.png)](https://codeclimate.com/github/ChrisMacNaughton/BtSync)
+[![Coverage Status](https://coveralls.io/repos/ChrisMacNaughton/BtSync/badge.png)](https://coveralls.io/r/ChrisMacNaughton/BtSync)
 
 BtSync is a library to help you interact with Bittorrent Sync in Ruby
 

@@ -1,6 +1,8 @@
 
 require 'vcr'
 require 'webmock'
+require 'coveralls'
+Coveralls.wear!
 
 def file_fixture(filename)
   open(File.join(File.dirname(__FILE__), 'fixtures', "#{filename.to_s}")).read
