@@ -90,12 +90,6 @@ describe 'BtSync' do
     end
     @os.should == "linux"
   end
-  it "can get the version" do
-    VCR.use_cassette("get-version") do
-      @version = @bt.get_version
-    end
-    @version.should == 16777350
-  end
   it "can add and delete a folder" do
     VCR.use_cassette("add-folder") do
       @bt.add_folder '/tmp'

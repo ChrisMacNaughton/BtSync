@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=XEQRSGSJGGNKCTV4UZG2ZPOJRINGDE2C&token=RZbVuwWEheFdAfByFpevSH6m3_t2y6Brna0IR68P0vD7nryy2Ktd6gTBuFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=VIOL5KR65COJH7N3LBFN3ESHTMIN267T&token=z4WBMZIrEoxE26jLmo5BmgsiGtF70X6AWG2SNQ8wk-uiPIaZrEhtVmQTulEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TotE2NElyDGhazP4Fk3b
+      - GUID=9aArxNz0lCd3TtOmwFi5
   response:
     status:
       code: 200
@@ -26,16 +26,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Wed, 12 Jun 2013 18:42:13 GMT
+  recorded_at: Thu, 13 Jun 2013 18:45:56 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=XEQRSGSJGGNKCTV4UZG2ZPOJRINGDE2C&token=RZbVuwWEheFdAfByFpevSH6m3_t2y6Brna0IR68P0vD7nryy2Ktd6gTBuFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=VIOL5KR65COJH7N3LBFN3ESHTMIN267T&token=z4WBMZIrEoxE26jLmo5BmgsiGtF70X6AWG2SNQ8wk-uiPIaZrEhtVmQTulEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=TotE2NElyDGhazP4Fk3b
+      - GUID=9aArxNz0lCd3TtOmwFi5
   response:
     status:
       code: 200
@@ -54,5 +54,5 @@ http_interactions:
       string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
         1, "peer": "10.0.1.254:12345" } ] }'
     http_version: 
-  recorded_at: Wed, 12 Jun 2013 18:42:13 GMT
+  recorded_at: Thu, 13 Jun 2013 18:45:56 GMT
 recorded_with: VCR 2.5.0

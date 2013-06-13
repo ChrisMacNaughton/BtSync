@@ -40,7 +40,7 @@ describe 'BtSync::Directory' do
       @directory.add_host('10.0.1.254', '12345')
       @hosts = @directory.known_hosts
     end
-    @hosts[1].should == "10.0.1.254:12345"
+    @hosts.values.should include "10.0.1.254:12345"
 
     VCR.use_cassette('remove-known-host') do
       @directory.remove_host(1)
