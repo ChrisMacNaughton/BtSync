@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getostype&output=json&token=XyBEsTE14yOeEBRRXOW196byOfS6G2QcAh0caYsBRhMAG6SnoEx7SmmIxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getostype&output=json&token=y-E7Ch8p-W5UzrwOvkc1jwZzjKpSy8aJAVqIqiTqdbkr8ytOHWyxOSaMxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=oSmqqK48CCm4uXCrJr3m
+      - GUID=sOLWWUio3fKfRmCLVW4c
   response:
     status:
       code: 200
@@ -26,5 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "os": "linux" }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
+  recorded_at: Fri, 21 Jun 2013 17:23:52 GMT
 recorded_with: VCR 2.5.0

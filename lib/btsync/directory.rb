@@ -4,7 +4,7 @@ class BtSync
     include HTTParty
     include BtCommunicator
     default_params output: 'json'
-    attr_reader :secret, :name
+    attr_reader :secret, :name, :errors
 
     def initialize(name, secret, btsync)
       @name = name
@@ -26,11 +26,15 @@ class BtSync
       query = secret_params(new_secret)
       res = get(path('updatesecret'), query: query)
       p = res.parsed_response
-      if p != '{}' && p != '\r\ninvalid request'
+      if p != {} && p != '\r\ninvalid request'
         @secret = new_secret
         true
       else
-        @errors << res.parsed_response
+        if p == {}
+          @errors << "Invalid Secret"
+        else
+          @errors << res.parsed_response
+        end
         false
       end
     end

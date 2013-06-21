@@ -25,6 +25,23 @@ describe 'BtSync::Directory' do
       @directory.remove_host 0
     end
   end
+  it 'can destroy itself' do
+    VCR.use_cassette('delete-directory') do
+      dir = BtSync::Directory.new('/usr/share', @bt.generate_secret, @bt)
+      @bt.folders.map(&:name).should include dir.name
+      dir.destroy
+      @bt.folders.map(&:name).should_not include dir.name
+    end
+  end
+  it 'will have errors if you update with a bad secret' do
+    @secret = @directory.secret
+    VCR.use_cassette('change secret error') do
+      new_secret = '123456'
+      @directory.update_secret(new_secret)
+      @directory.secret.should be == @secret
+      @directory.errors.should include "Invalid Secret"
+    end
+  end
   it 'can view contained folders' do
     VCR.use_cassette('view-folders') do
       @folders = @directory.folders
