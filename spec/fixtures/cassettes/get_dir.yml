@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=VoAJhNeAyGsLbUAY6_39B4D-MSeD2U6JqGvRHMgc4LAVSFNVG8zmjEWHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ypqH9OzqhYx4TTASLvYO
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -29,16 +29,16 @@ http_interactions:
         "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
         "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:01 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:21 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=VoAJhNeAyGsLbUAY6_39B4D-MSeD2U6JqGvRHMgc4LAVSFNVG8zmjEWHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ypqH9OzqhYx4TTASLvYO
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -59,16 +59,16 @@ http_interactions:
         "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
         "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:01 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:21 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=VoAJhNeAyGsLbUAY6_39B4D-MSeD2U6JqGvRHMgc4LAVSFNVG8zmjEWHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ypqH9OzqhYx4TTASLvYO
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -89,5 +89,5 @@ http_interactions:
         "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
         "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:02 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:21 GMT
 recorded_with: VCR 2.5.0

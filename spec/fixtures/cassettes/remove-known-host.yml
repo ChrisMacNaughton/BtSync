@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=1GWrV8sJYuYgxOIrpBo5U5Yqnf_RODIs6CBOQC9df_VRdIIhQJM2n0yHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP&token=1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BgwBzCdaaz9806SnwW42
+      - GUID=XEbURKXg3ebTU30iLubC
   response:
     status:
       code: 200
@@ -17,26 +17,25 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '104'
+      - '59'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
-        1, "peer": "10.0.1.254:12345" } ] }'
+      string: ! '{ "hosts": [ { "index": 0, "peer": "10.0.1.254:12345" } ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:09 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=1&name=/home/vagrant&output=json&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=1GWrV8sJYuYgxOIrpBo5U5Yqnf_RODIs6CBOQC9df_VRdIIhQJM2n0yHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP&token=1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BgwBzCdaaz9806SnwW42
+      - GUID=XEbURKXg3ebTU30iLubC
   response:
     status:
       code: 200
@@ -54,16 +53,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:09 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=1GWrV8sJYuYgxOIrpBo5U5Yqnf_RODIs6CBOQC9df_VRdIIhQJM2n0yHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP&token=1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=BgwBzCdaaz9806SnwW42
+      - GUID=XEbURKXg3ebTU30iLubC
   response:
     status:
       code: 200
@@ -72,14 +71,14 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '60'
+      - '17'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" } ] }'
+      string: ! '{ "hosts": [  ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:03:09 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
 recorded_with: VCR 2.5.0
