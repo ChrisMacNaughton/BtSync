@@ -2,13 +2,40 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WQUVU4Y24ZUVTJKQ5GUGV4HTTJUE2SG2&token=ejWv64pWCtIPBpqIfktISTdvRTZ3BcZ0enIRIZ_AMOIUf-TCNkPF7iiMxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=6P2Q3BMCKEMCP4MSR2WF724STSWEBWXY&token=qo47QHLu1yuUqNt_-Pz0GNIOb_QvbTeO7fPziwsxe_jaMSsI1B21y4CTxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=rjaBHJHENSXofGDyyThi
+      - GUID=AV5oVfs9MVcbMTyDAGfA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '60'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" } ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 17:55:13 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=6P2Q3BMCKEMCP4MSR2WF724STSWEBWXY&token=qo47QHLu1yuUqNt_-Pz0GNIOb_QvbTeO7fPziwsxe_jaMSsI1B21y4CTxFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=AV5oVfs9MVcbMTyDAGfA
   response:
     status:
       code: 200
@@ -26,5 +53,32 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:23:53 GMT
+  recorded_at: Fri, 21 Jun 2013 17:55:13 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=6P2Q3BMCKEMCP4MSR2WF724STSWEBWXY&token=qo47QHLu1yuUqNt_-Pz0GNIOb_QvbTeO7fPziwsxe_jaMSsI1B21y4CTxFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=AV5oVfs9MVcbMTyDAGfA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '17'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [  ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 17:55:13 GMT
 recorded_with: VCR 2.5.0

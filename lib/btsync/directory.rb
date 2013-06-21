@@ -5,7 +5,6 @@ class BtSync
     include BtCommunicator
     default_params output: 'json'
     attr_reader :secret, :name, :errors
-
     def initialize(name, secret, btsync)
       @name = name
       @secret = secret
@@ -26,14 +25,12 @@ class BtSync
       query = secret_params(new_secret)
       res = get(path('updatesecret'), query: query)
       p = res.parsed_response
-      if p != {} && p != '\r\ninvalid request'
+      if p != {}
         @secret = new_secret
         true
       else
         if p == {}
           @errors << "Invalid Secret"
-        else
-          @errors << res.parsed_response
         end
         false
       end
@@ -65,12 +62,13 @@ class BtSync
     end
 
     def remove_host(index)
+      host_name = known_hosts.select { |id, host| id == index}
       query = { name: name, secret: secret, index: index }
       res = get(path('removeknownhosts'), query: query)
-      if res.parsed_response != {}
-        res.parsed_response
-      else
+      if known_hosts.select { |id, host| host == host_name }.empty?
         true
+      else
+        false
       end
     end
 

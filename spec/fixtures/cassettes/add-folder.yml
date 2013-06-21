@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=generatesecret&output=json&token=y-E7Ch8p-W5UzrwOvkc1jwZzjKpSy8aJAVqIqiTqdbkr8ytOHWyxOSaMxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=generatesecret&output=json&token=omYvb_8dj09aqM6kSkwSW4RUeFBoxBFdXGOzqlq-3XEcIOJq3V_VPn6TxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=sOLWWUio3fKfRmCLVW4c
+      - GUID=uKTmyBQxmUIBGP9rVF0R
   response:
     status:
       code: 200
@@ -24,19 +24,19 @@ http_interactions:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "rosecret": "R4UVNEEUY3MNH4HZMKNM3OTY3ZNHZLGDR", "secret": "SFY5IBGYBKDC3W6BHTDZQGGCFH6EG2KB"
+      string: ! '{ "rosecret": "RY2JVNV4PZPB3S4VL6D3EKUVCFQBHFSIQ", "secret": "2W5ZY5ST5RF2DLN4BOTWX43MESWRYAMG"
         }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:23:52 GMT
+  recorded_at: Fri, 21 Jun 2013 17:55:12 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addsyncfolder&name=/tmp&output=json&secret=SFY5IBGYBKDC3W6BHTDZQGGCFH6EG2KB&token=y-E7Ch8p-W5UzrwOvkc1jwZzjKpSy8aJAVqIqiTqdbkr8ytOHWyxOSaMxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addsyncfolder&name=/tmp&output=json&secret=2W5ZY5ST5RF2DLN4BOTWX43MESWRYAMG&token=omYvb_8dj09aqM6kSkwSW4RUeFBoxBFdXGOzqlq-3XEcIOJq3V_VPn6TxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=sOLWWUio3fKfRmCLVW4c
+      - GUID=uKTmyBQxmUIBGP9rVF0R
   response:
     status:
       code: 200
@@ -54,7 +54,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "error": 0 }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:23:52 GMT
+  recorded_at: Fri, 21 Jun 2013 17:55:12 GMT
 - request:
     method: get
     uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
@@ -74,23 +74,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=SjF8X83dcxGyobflsrEW; path=/
+      - GUID=Fm8MWlZBln5OotMOm5iX; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>unLcYmJkdK4gz9hPfaZOLIaOlbdc_mPxw-DjM29DjqsT6crZ1QnyKyiMxFEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>3pjf4tJfdyMTNgIRoHt3l4OwOJ1Cd-5FdL_CKroI7beztwY7hkqWm4CTxFEAAAAA</div></html>
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:23:52 GMT
+  recorded_at: Fri, 21 Jun 2013 17:55:12 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=unLcYmJkdK4gz9hPfaZOLIaOlbdc_mPxw-DjM29DjqsT6crZ1QnyKyiMxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=3pjf4tJfdyMTNgIRoHt3l4OwOJ1Cd-5FdL_CKroI7beztwY7hkqWm4CTxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=SjF8X83dcxGyobflsrEW
+      - GUID=Fm8MWlZBln5OotMOm5iX
   response:
     status:
       code: 200
@@ -107,10 +107,10 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
-        [  ], "readonlysecret": "RVVZWSMFWNP7EU4E7Q34ZQN46L4E57H3J", "secret": "WQUVU4Y24ZUVTJKQ5GUGV4HTTJUE2SG2",
+        [  ], "readonlysecret": "RTWWOHFAG4NMBOFL6G56DRMAXYQKZ2TSQ", "secret": "6P2Q3BMCKEMCP4MSR2WF724STSWEBWXY",
         "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
-        [  ], "readonlysecret": "R4UVNEEUY3MNH4HZMKNM3OTY3ZNHZLGDR", "secret": "SFY5IBGYBKDC3W6BHTDZQGGCFH6EG2KB",
+        [  ], "readonlysecret": "RY2JVNV4PZPB3S4VL6D3EKUVCFQBHFSIQ", "secret": "2W5ZY5ST5RF2DLN4BOTWX43MESWRYAMG",
         "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:23:52 GMT
+  recorded_at: Fri, 21 Jun 2013 17:55:12 GMT
 recorded_with: VCR 2.5.0
