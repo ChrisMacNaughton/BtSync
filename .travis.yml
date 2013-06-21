@@ -7,3 +7,6 @@ rvm:
 script: bundle exec rspec spec
 notifications:
   email: false
+branches:
+  only:
+    - master
