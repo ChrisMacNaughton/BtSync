@@ -142,4 +142,7 @@ describe 'BtSync' do
       res["version"].should be == 0
     end
   end
+  it 'can symbolize a hash -_-' do
+    @bt.send('symbolize', {'test' => 'value'}).should be == {test: 'value'}
+  end
 end

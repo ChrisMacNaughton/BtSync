@@ -70,10 +70,7 @@ class BtSync
   end
 
   def get_speed
-    {
-      up: up,
-      down: down
-    }
+    { up: up, down: down }
   end
 
   def up
@@ -137,7 +134,7 @@ class BtSync
   private
 
   def setup_opts(opts)
-    opt = defaults.merge!(opts.symbolize)
+    opt = defaults.merge!(symbolize(opts))
     opt[:uri].gsub!(%r(^(https?://){1,})i, '')
     @port =  opt[:port]
     @user = opt[:user]
@@ -159,13 +156,12 @@ class BtSync
     res = get(path('getsyncfolders'))
     @folder_list = res.parsed_response
   end
-end
-class Hash
-  def symbolize
+
+  def symbolize(h)
     r = {}
-    self.each do |k, v|
+    h.each do |k, v|
       if k.is_a? String
-        r[k.to_symbol] = v
+        r[:"#{k}"] = v
       else
         r[k] = v
       end
