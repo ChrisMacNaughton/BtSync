@@ -10,8 +10,7 @@ install:
   - sudo apt-get update
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
-  - wget http://files.vagrantup.com/packages/be0bc66efc0c5919e92d8b79e973d9911f2a511f/vagrant_1.0.5_i686.deb
-  - sudo dpkg -i vagrant_1.0.5_i686.deb
+  - wget http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.deb
 script:
   - /opt/vagrant/bin/vagrant up
   - bundle exec rspec spec
