@@ -11,11 +11,11 @@ class BtSync
   default_params :output => 'json'
   def initialize options = {}
     @opts = {
-      :protocol => "http",
-      :uri => "localhost",
-      :port => "8888",
-      :user => "admin",
-      :password => "AdminPassword"}
+      protocol: "http",
+      uri: "localhost",
+      port: "8888",
+      user: "admin",
+      password: "AdminPassword"}
     @opts.merge!(options.symbolize)
     @opts[:uri].gsub!(/^(https?:\/\/){1,}/i, '')
     @port =  @opts[:port]
@@ -70,16 +70,16 @@ class BtSync
     s = get_folder_list["speed"].split(", ")
     up = s[0].split(" ")
     down = s[1].split(" ")
-    {:up => {:speed => up[0], :metric => up[1]}, :down => {:speed => down[0], :metric => down[1]}}
+    {up: {speed: up[0], metric: up[1]}, down: {speed: down[0], metric: down[1]}}
   end
   def remove_folder folder_name, my_secret = nil
     my_secret ||= secret(folder_name)
-    res = get(path('removefolder'), :query => { :name => folder_name, :secret => my_secret})
+    res = get(path('removefolder'), query: { name: folder_name, secret: my_secret})
     true
   end
   def add_folder folder_name, my_secret = nil
     my_secret ||= generate_secret
-    res = get(path('addsyncfolder'), :query => { :name => folder_name, :secret => my_secret})
+    res = get(path('addsyncfolder'), query: { name: folder_name, secret: my_secret})
     unless res["error"] == 0
       @errors << res["message"]
       return false
@@ -105,7 +105,7 @@ class BtSync
   end
 
   def get_dir with_dir = "/"
-    res = get(path('getdir'), :query => {"dir" => with_dir})
+    res = get(path('getdir'), query: {"dir" => with_dir})
     res.parsed_response["folders"].map{|f| f.gsub!('//', '/')}
   end
 

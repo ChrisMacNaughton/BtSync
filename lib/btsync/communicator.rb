@@ -25,7 +25,7 @@ module BtCommunicator
     @opts
   end
   def auth
-    {:username => user, :password => password}
+    {username: user, password: password}
   end
   def token force = false
     @token_cache ||= 0
@@ -45,7 +45,7 @@ module BtCommunicator
   end
 
   def get path, opts = {}
-    opts = {:headers=>{"Cookie" => cookies}, :query => {}, :basic_auth => auth}.merge(opts)
+    opts = {headers: {"Cookie" => cookies}, query: {}, basic_auth: auth}.merge(opts)
     self.class.get(path, opts)
   end
 
@@ -54,7 +54,7 @@ module BtCommunicator
     t = DateTime.now.strftime('%s').to_i
     if @request_token.nil? || force || (@last_request + 600) < t
       @last_request = t
-      @request_token = self.class.get("#{root_url}gui/token.html", :basic_auth => auth)
+      @request_token = self.class.get("#{root_url}gui/token.html", basic_auth: auth)
     else
       @request_token
     end

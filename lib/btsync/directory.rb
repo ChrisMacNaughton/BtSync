@@ -17,12 +17,12 @@ class BtSync
     end
 
     def destroy
-      get(path('removefolder'), :query => { :name => name, :secret => secret} )
+      get(path('removefolder'), query: { name: name, secret: secret} )
       self.instance_variables.each{|v| v = nil}
     end
     def update_secret new_secret = nil
       new_secret ||= generate_secret
-      res = get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret} )
+      res = get(path('updatesecret'), query: { name: @name, secret: @secret, newsecret: new_secret} )
       if res.parsed_response != "{}" && res.parsed_response != '\r\ninvalid request'
         @secret = new_secret
         true
@@ -32,7 +32,7 @@ class BtSync
       end
     end
     def folders
-      res = get(path('getdir'), :query => {:dir => @name})
+      res = get(path('getdir'), query: {:dir => @name})
       res.parsed_response["folders"]
     end
     def peers
@@ -41,17 +41,17 @@ class BtSync
       f["peers"]
     end
     def known_hosts
-      res = get(path('getknownhosts'), :query => {:name => name, :secret => secret})
+      res = get(path('getknownhosts'), query: {:name => name, :secret => secret})
       hosts = {}
       res["hosts"].map{|h| hosts[h["index"]] = h["peer"]}
       hosts
     end
     def add_host host, port
-      res = get(path('addknownhosts'), :query =>{:name => name, :secret => secret, :addr =>host, :port => port} )
+      res = get(path('addknownhosts'), query: {name: name, secret: secret, addr: host, port: port} )
       true
     end
     def remove_host index
-      res = get(path('removeknownhosts'), :query =>{:name => name, :secret => secret, :index => index} )
+      res = get(path('removeknownhosts'), query: {name: name, secret: secret, index: index} )
       if res.parsed_response != {}
         res.parsed_response
       else
@@ -101,7 +101,7 @@ class BtSync
       bool(preferences["iswritable"])
     end
     def preferences
-      res = get(path('getfolderpref'), :query => { :name => @name, :secret => @secret})
+      res = get(path('getfolderpref'), query: { name: @name, secret: @secret})
       res.parsed_response["folderpref"]
     end
     def read_only_secret
@@ -109,7 +109,7 @@ class BtSync
     end
     private
     def set_pref pref, opt
-      res = get(path('setfolderpref'), :query => make_opts(pref, opt) )
+      res = get(path('setfolderpref'), query: make_opts(pref, opt) )
       true
     end
     def default_settings
@@ -123,13 +123,13 @@ class BtSync
         'deletetotrash' => 1,
         'usehosts' => 1
       }
-      get(path('setfolderpref'), :query => opts )
+      get(path('setfolderpref'), query: opts )
     end
     def make_opts name, opt
      opts = preferences
      opts[name] = bool_to_i(opt)
      opts.delete('readonlysecret')
-     opts.merge!({:name => @name, :secret => @secret})
+     opts.merge!({name: @name, secret: @secret})
     end
     def bool i
       if i == 0
@@ -153,7 +153,7 @@ class BtSync
       if folder_list.map{|f| f["name"]}.include? name
         true
       else
-        res = get(path('addsyncfolder'), :query => { :name => name, :secret => secret})
+        res = get(path('addsyncfolder'), query: { name: name, secret: secret})
       end
     end
   end
