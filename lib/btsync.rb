@@ -70,23 +70,20 @@ class BtSync
   end
 
   def get_speed
-    s = get_folder_list['speed'].split(', ')
     {
-      up: {
-        speed: up(s)[0], metric: up(s)[1]
-      },
-      down: {
-        speed: down(s)[0], metric: down(s)[1]
-      }
+      up: up,
+      down: down
     }
   end
 
-  def up(s)
-    s[0].split(' ')
+  def up
+    l = get_folder_list['speed'].split(', ')[0].split(' ')
+    {speed: l[0].to_f, metric: l[1]}
   end
 
-  def down(s)
-    s[1].split(' ')
+  def down
+    l = get_folder_list['speed'].split(', ')[1].split(' ')
+    {speed: l[0].to_f, metric: l[1]}
   end
 
   def remove_folder(folder_name, my_secret = nil)

@@ -133,7 +133,7 @@ class BtSync
       bool(preferences['deletetotrash'])
     end
 
-    def is_writable?(with_dir)
+    def is_writable?
       bool(preferences['iswritable'])
     end
 
@@ -186,12 +186,11 @@ class BtSync
     end
 
     def bool(i)
+      i = i.to_i
       if i == 0
         false
-      elsif i == 1
-        true
       else
-        i
+        true
       end
     end
 

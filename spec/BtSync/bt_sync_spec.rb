@@ -127,4 +127,19 @@ describe 'BtSync' do
       folder.name.should be == '/home/vagrant'
     end
   end
+  it 'can check speeds' do
+    VCR.use_cassette('check speeds') do
+      @bt.up.should be == {speed: 0.0, metric: 'kB/s'}
+    end
+    VCR.use_cassette('check speeds') do
+      @bt.down.should be == {speed: 0.0, metric: 'kB/s'}
+    end
+  end
+  it 'can check for new versions' do
+    VCR.use_cassette('check for new version') do
+      res = @bt.check_new_version
+      res["url"].should be == ""
+      res["version"].should be == 0
+    end
+  end
 end

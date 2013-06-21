@@ -131,4 +131,14 @@ describe 'BtSync::Directory' do
     end
     @directory.secret.should be == @secret
   end
+  it 'can get a read only secret' do
+    VCR.use_cassette('get read only secret') do
+      @directory.read_only_secret.should_not be == nil
+    end
+  end
+  it 'can check writable' do
+    VCR.use_cassette('check is writable') do
+      @directory.is_writable?.should be == true
+    end
+  end
 end

@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=WQUVU4Y24ZUVTJKQ5GUGV4HTTJUE2SG2&token=ejWv64pWCtIPBpqIfktISTdvRTZ3BcZ0enIRIZ_AMOIUf-TCNkPF7iiMxFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=rjaBHJHENSXofGDyyThi
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '188'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folderpref": { "deletetotrash": 0, "iswritable": 1, "readonlysecret":
+        "RVVZWSMFWNP7EU4E7Q34ZQN46L4E57H3J", "relay": 0, "searchdht": 1, "searchlan":
+        0, "usehosts": 0, "usetracker": 0 } }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 17:31:41 GMT
+recorded_with: VCR 2.5.0
