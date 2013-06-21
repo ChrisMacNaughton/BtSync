@@ -27,4 +27,1192 @@ http_interactions:
       string: ! '{  }'
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=wbuqsm2q6CL6hZmlMbBxOiDuNzdA-cJqvvN78L7wqHKxeP1MAPsgJC19xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=1RYksshC365NZ2bb63sd
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=xB0Z92G_V4jCTn45WbmmFs3CbHsD_ldeZTR5Fx2NoggXqenHEtSgpy59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Mkbj3ohQc7Jmh74WHVgK
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=8H0N3t_89nKwx6bCBgOScLOFEFxNlQ5GB611QzgHmYtutfcdA0Lp8y59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=eQA9y7t8NAGcotOev6xV
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=Xuu-NAYh-zYO-zJ2KY16o23JC61QB7iM308ffsWzf0JTPYX776KNBy59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=bErJ9JqoKt7kAnKPeWQU
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=Wf6qzAMFW5RSHl-woWZPEPXDJuccJOkqVIotaQmWT9QUbjm-UqYWyi99xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=WerZRfSfeZ5tR9VqLCz2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:59 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=0gL3PhtzoacxOU2CW5QymSZGo0YCuKUwxxDbnO5u5lw_yjlrfetQmi99xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=wu9GdKJNmeZfyqH4a8An
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:59 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=OWOh5ACnB-5XtsayQbEwYULu-7AroeoPhMZb_PVWuVEuyrUgt_BUSi99xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=9vqtYzn0e0j3OP6R86gH
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:20:00 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=8eJGnU9NxeVpGd3XFs4WJPmpou5hzi53nrcVr-VdoLvPgzAKB2rv3DB9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=yzLgjHLr60VxxNo4Wuvf
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:20:00 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=qTPZ-vRYaT4gyEzfQyGpw0vH4Pc4M_M8Bpz7U9sjSwlCzM1s_8BrAzB9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=AdGBzAK153aLuQbzFNAu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:20:01 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=G8ViJ_zyKr3yZINSyb34kJy5BdqPR_QetE10hGawFti2qn6BQ7foUzF9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Xod0arYEH3xp4o78ZOXy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:20:01 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=6SeX1tX-Bo42rw2EQUn2byT4M0Nfqt2KwcgLkP1foS_zlG7IMynopDF9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=ZT2UnOx2bG98tVdvWsqy
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:20:02 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=A1PP32DaMhoE2gU4By091R6tGX7a7WIMWatigC7gY2QGCt-lnPoXwHx9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=0naXgXFpSFbl3RcNiPDl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:17 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=AKo-pj7P8gL42lvgbLxGR3LSq0lBawp92pJcxFoEuzDViM-GNCxxa319xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=8ARY7Y5geqRl8q7jPYEE
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=SYK-iAHLb9XWxnPSKCbBrtwQsfy7TZu_d24b2NY79BlqPcg_J8LaUH59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=14zlsyqlcY8Mi1W77pDA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=iuf2mC_kPmR-WSGqPpTmUpBr0JU_snaffQe2sWnJaQtYcfKZb3wVQX59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=njWq1WQ4tIjBJGOVui0M
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:19 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=hH8ukh3FJE5Ny9wiDykrREmmlfPfe7fmEtl0D9fRr0JygEF0No0LKH99xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=AQJMtjwPHBskoCkMMwwo
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:20 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=x67l6dekpA8yIayGQNj5Gxo9v9Qne9yMDmzx-w0DTLfv29TxTNFljIB9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=O33ZlTWEyXXc5orgI6F9
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:21 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=dDDSLrAxsmW7GxhZOuzq0Xtywb1LCpF-4bPifQYO22x-ITW11d8kg4F9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=yQ90M31nLIwU9rFMBwZi
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:21 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=IC9idkFFciJDGtBfoQKMy-Wgt67eSfPQdRDTTQDGawB0uVM29LpY44F9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=GZS6aQlUi4Wv9bFYEzpF
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:22 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=L32fTr8RmfHwOVQSXgc9-SZUwjYfP6PSxR4gSjdM8yf0Eb6w-znIfYJ9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Qmf5ZDWNR9Sh1MiHawYX
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:23 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=wZ_Mf18HNJtKebseTyYo4X2T-Jal2cbOJ-MnOOnS-zXtJ3JheT4W64N9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=BHtjSVMkZBQn8c5P5Taf
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:24 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=aTZCOuZqoAa_PF56Y5eR2Lo4Erwqitkzy573AAAzjwCXfXumbdtmIIR9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=28afS9ZnGzdEyNuwgeY4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:25 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=_CicQXNZfkZmj3mMIRSPjlqyT-cuJaIO6r0P1VliO1wz1N3pQYyTRy1-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=i3PjttdARWNWe9wcDBjf
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:13 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=Ge88x0EcOc5CcErAnPH8yRYew7nvbc4oAnbRtiF-B6tdeZnO6SbVaC1-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=RCmlGbPskUJHV8TLNKIq
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:14 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=YWY4jruZ-78zoF6drMdjeBkX4bOWH5kdAqtf0dWkclEvl99CXkjTqS5-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Odr6Xa6dRJjhKMqqgRup
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:15 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=C7p2dfQI39w-SCThMGHurSIBgeCEJ8LRCQLl7USueDLCygeMkNWqWC9-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=DwQ8JbQbPqZQPkxtv8Aj
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:16 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=1GeEZtggC1CB3NVCSItCfWOzgIWHDaMNLceY5w2R-WUXvUAzYgU5_TB-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Y9AlCFOkdVJbo4wFmd32
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:17 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=Osv7j1C2LpVROFnITKRJ3DClr6ULmucHDhX43dzvF58dzJIbhXAshDF-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=oF8enV29VUwyY5PTojSn
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=3iH9lGNftZRXVLzTpkOteQvw3AjCodXCIUD0biZ01RawnHwtrYJjmDN-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=7dTI29f3FzhpYkEyBV8U
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:20 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=q2mpnvezC2sK9pHCBsYbzEzgS6HfbEYs3B0fNXHJj-4elLMlYVa3iDR-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=x9QIRFuCO7zqlfFkXYc7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:21 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=V9nuABQuuBTgFlZF6Ok4VLyZaXdRWo0t9KQkXQlZuX7RxtkPQThWtTV-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=eGvS3xIDb4MSEVX21GLA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:22 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=DvPPjTcRodD--aBcdV6umgUWWr_57JSYVyqyrTW-G15w2NzqpoPQgjZ-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=FjDajghinrjSA5JWuyGV
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:23 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=8an7dfqLSWR0nH3RspD2KsmAfw-MmefFAJWK-Qy5go29h0cmzeFNVjd-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=v4ytJMGDXepv7GTEoZ7l
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:24 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=lH8Coc_SrIbRbAtzxWsyeQkvhzbHoZCP3XhEo6M9gCr6T72ZSI9bL6d-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=OLTOROjPLxfl8pLyK8yK
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:16 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=umCm2eTWdGzoiyr75WFWtxkt5Kiq9K4ImubiL7WmBKN6Lg-lAS3Oa6h-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=oL6Ewrgkx8o53RZgAMrl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:17 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=JlN-vImixfrXjf7vmWcbX6D-7r9w4wmgE6LlCibGDmNEGRgPNYrncql-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=6dmMselioOwRKL0QnaYu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=1YMplAbZOvWb4FZjRHLJYJl7yVBlCYfzgSaq8hsdwYoNbUmtqLsamqt-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=D25Cw7HemfjAbIDZiVwL
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:20 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=1lZuctpcwTk5a8arwXQ1_P0rfn-QLfC5J0oaznFmfM9fyRiE32iPoKx-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=2tVeuWBDBjyTW3OvcYKv
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:21 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=9xb5wnLXCuU33L1T8xVjsWY_WymaGRvP3yrZgSim1e5OUrPSRkZHbK1-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=a5XJp6qYwFESua0dFVse
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:23 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=U6LrUhWYOZjLr2DKUu-ZkhOYka7b32HHaGHzIgtLFieO5RLtrueTCq9-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=mHl2e5KQ5MK9kBoS0PQS
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:24 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=C7alogJlZPgfp2AiGt9tuTPrwgaAKMgXnNYjnlq3qUfVTLfQ5CixVrB-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=TgoeEgPpvdtAs7SW4gNO
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:26 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=iLE8gr6uF0abFxD0scy2I6Hg7XeX9LBwVEDmywE74ZEXfY3rkS-nmbJ-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=1gdv6R3LKvNZlrrS4ChT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:27 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=qlCdQ1DkhtcxN-HSVy0xbksgmGwIysxDAIO98FfhyeDFCtVS4YNFB7N-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=0sSPWJDOBoZPkU5sYswk
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:29 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=Wmv08VW_6DKplE2eqMisq8IVJzxTot-bDdC5e804LhEShGnkUGaLhbV-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=M5vBKZgcX18f2N2OJyUK
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:30 GMT
 recorded_with: VCR 2.5.0

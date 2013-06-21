@@ -74,9 +74,8 @@ class BtSync
       known_hosts.each do |id, host|
         host = host.split(':')
         if ip == host[0]
-          unless port.nil?
-            next if port != host[1]
-          end
+          next if port != host[1] unless port.nil?
+
           remove_host(id)
         end
       end

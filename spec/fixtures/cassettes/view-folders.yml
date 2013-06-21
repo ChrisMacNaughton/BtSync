@@ -27,4 +27,112 @@ http_interactions:
       string: ! '{ "folders": [  ] }'
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=wbuqsm2q6CL6hZmlMbBxOiDuNzdA-cJqvvN78L7wqHKxeP1MAPsgJC19xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=1RYksshC365NZ2bb63sd
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [  ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:57 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=A1PP32DaMhoE2gU4By091R6tGX7a7WIMWatigC7gY2QGCt-lnPoXwHx9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=0naXgXFpSFbl3RcNiPDl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [  ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:17 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=_CicQXNZfkZmj3mMIRSPjlqyT-cuJaIO6r0P1VliO1wz1N3pQYyTRy1-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=i3PjttdARWNWe9wcDBjf
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [  ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:13 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=lH8Coc_SrIbRbAtzxWsyeQkvhzbHoZCP3XhEo6M9gCr6T72ZSI9bL6d-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=OLTOROjPLxfl8pLyK8yK
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [  ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:16 GMT
 recorded_with: VCR 2.5.0

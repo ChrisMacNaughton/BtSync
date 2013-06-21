@@ -33,33 +33,6 @@ http_interactions:
   recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=qBmSi6GM9DbxlJMVLhkw; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>QDCGMgOT0hqGL3CtZXTNicrgiMD-yEKlSLpXH50YN6M4jeKIfIwwK297xFEAAAAA</div></html>
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
-- request:
-    method: get
     uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=QDCGMgOT0hqGL3CtZXTNicrgiMD-yEKlSLpXH50YN6M4jeKIfIwwK297xFEAAAAA
     body:
       encoding: US-ASCII
@@ -87,33 +60,6 @@ http_interactions:
         "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
         [  ], "readonlysecret": "RAZ7MVXHOHUYF6JCAMMFSKSRBZ3KFIS5R", "secret": "YYUYQEZSGL5JJN6QC75Z5DVSDJIHZB6W",
         "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '121'
-      Content-Type:
-      - text/html
-      Set-Cookie:
-      - GUID=bBiYGwSPJefnRHRjWpr0; path=/
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>C8Vntfrde3XggWcc1DuEZF6PuZPCn465eCjMh71BRTxJmZs6jdbYmW97xFEAAAAA</div></html>
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
 - request:
@@ -147,4 +93,432 @@ http_interactions:
         "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=OaF7bZXRoO_1n5NwJJktT-N0K9A8f6-cIGK56ggtaIRLQQ1es7IiKy19xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=SFQqFC8RtDJowz6qG9Zn
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "secret": "WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RBHE2B5QOA6L5NFUYR3VWQQAGSXNSKN7M", "secret": "Y4RPG2ZIIAY3UNFMEB6PCR6XRLRZEEAB",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:57 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=vXrMRP7vnnlPXYdsWKb_8iP0dD4FJo3KzJ7se9kGEQBliag4vBktdC19xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=kS3SEIqH2PoY4658ZwAQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '447'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "secret": "WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RBHE2B5QOA6L5NFUYR3VWQQAGSXNSKN7M", "secret": "Y4RPG2ZIIAY3UNFMEB6PCR6XRLRZEEAB",
+        "size": "98 B in 2 files (Indexing...)" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s
+        down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:57 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=M7xksm5NN4jirPPEIZcVmv7g9HDiKGbkFh7BPNZmEc46xVq70Avj2C19xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=rKh06ETUlLRTTcQttt4T
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '447'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "secret": "WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RBHE2B5QOA6L5NFUYR3VWQQAGSXNSKN7M", "secret": "Y4RPG2ZIIAY3UNFMEB6PCR6XRLRZEEAB",
+        "size": "98 B in 2 files (Indexing...)" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s
+        down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:57 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=pdSqurbjMolWW2ff9zWefFCQJa49IIuAYooUlohLOEEPjOCLdHChfnt9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=3cKCOfFOnblcYSOG02iO
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RA5XTW2RXXAG2JM45FPWODC5DHYFZP775", "secret": "2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "ROMJP7DBNGQ5AQXG4QCUTE7DGLVMOYSGZ", "secret": "VN7G4WWOBO73TJASFCMHN22AY6QYBXUK",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:16 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=RezZfrooFv9uVOcMltlRlzs6cSpNnlnemkTDehCJOM95Kae46AWML3x9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=4KYGvYKoZpl1QIN62y5F
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RA5XTW2RXXAG2JM45FPWODC5DHYFZP775", "secret": "2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "ROMJP7DBNGQ5AQXG4QCUTE7DGLVMOYSGZ", "secret": "VN7G4WWOBO73TJASFCMHN22AY6QYBXUK",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:16 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=ajnk46KBla8huXOoalRQ2rhYyjh0T0lQdNHF354B6fFzqX-Ei3HmRnx9xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=zgrNqqmBgMWRorNpiWZr
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RA5XTW2RXXAG2JM45FPWODC5DHYFZP775", "secret": "2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "ROMJP7DBNGQ5AQXG4QCUTE7DGLVMOYSGZ", "secret": "VN7G4WWOBO73TJASFCMHN22AY6QYBXUK",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:16 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=jcTrdXOj5dYli31n1t5xsSGGsfzTHEx1ul_uXaw8FNa0Gwn8hYOU-Cp-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=KXOtg5iCRNkSuuej9L1X
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RL3L23TPPJTF3ERLMBOQX2RIVLPPHICII", "secret": "VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RQI5DXRTK444BAJAN3LTELPOVXYQB26HW", "secret": "PFI4URJHQSHVGSEAYTBKNA6ZYKYJRKZG",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:12 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=51tokoKAlPCcfZq8pZABuNLZDC2BW9gim4b8C0PlV5z59pxENDigeSx-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=TCGKt8ZcId2FhmYUGwCM
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RL3L23TPPJTF3ERLMBOQX2RIVLPPHICII", "secret": "VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RQI5DXRTK444BAJAN3LTELPOVXYQB26HW", "secret": "PFI4URJHQSHVGSEAYTBKNA6ZYKYJRKZG",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:12 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=1LBV1mMoynjIPJ2W7g3BJWlWFYrleZTlnkFQegSWD3d69mERSeQ1Kyx-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=GVOiNhgy0rbIB9h7f91v
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "RL3L23TPPJTF3ERLMBOQX2RIVLPPHICII", "secret": "VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RQI5DXRTK444BAJAN3LTELPOVXYQB26HW", "secret": "PFI4URJHQSHVGSEAYTBKNA6ZYKYJRKZG",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:12 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=KkaSF7OU6qjmuJBRUWtgOiqzvUlrGdkI8qnVI8Rc91BnlkwQWk0VV6R-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=OoEYgmdBkSHvKtPyrVtT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "R2RS355PZVS7N6YHUFULWDTMCM35KQ7QT", "secret": "GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RVOYULP4DSFSNLYZRRU5XFIRMZVS4BTQW", "secret": "HTO2GJ4NBAA2UGDGR5RWV6B2D3C3CWVH",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:14 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - GUID=oXzIjkVr1km7OTjRpt6q; path=/
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: <html><div id='token' style='display:none;'>EcSCSjnSpB_i96HYWJXe9jRREzIjMihf0-zu4XNECRekfOerfZdGyaZ-xFEAAAAA</div></html>
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:14 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=EcSCSjnSpB_i96HYWJXe9jRREzIjMihf0-zu4XNECRekfOerfZdGyaZ-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=oXzIjkVr1km7OTjRpt6q
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "R2RS355PZVS7N6YHUFULWDTMCM35KQ7QT", "secret": "GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RVOYULP4DSFSNLYZRRU5XFIRMZVS4BTQW", "secret": "HTO2GJ4NBAA2UGDGR5RWV6B2D3C3CWVH",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:14 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '121'
+      Content-Type:
+      - text/html
+      Set-Cookie:
+      - GUID=ChyGwAryrjezeboO50TV; path=/
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: <html><div id='token' style='display:none;'>jDTUNocTgw4-usATAKxWekcDqRz5RogzOV8LxAEcMl-2c1MJIE-CuaZ-xFEAAAAA</div></html>
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:14 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=jDTUNocTgw4-usATAKxWekcDqRz5RogzOV8LxAEcMl-2c1MJIE-CuaZ-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=ChyGwAryrjezeboO50TV
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
+        [  ], "readonlysecret": "R2RS355PZVS7N6YHUFULWDTMCM35KQ7QT", "secret": "GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE",
+        "size": "54.7 MB in 8 files" }, { "iswritable": 1, "name": "\/tmp", "peers":
+        [  ], "readonlysecret": "RVOYULP4DSFSNLYZRRU5XFIRMZVS4BTQW", "secret": "HTO2GJ4NBAA2UGDGR5RWV6B2D3C3CWVH",
+        "size": "0 B in 0 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down" }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:14 GMT
 recorded_with: VCR 2.5.0

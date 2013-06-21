@@ -54,4 +54,224 @@ http_interactions:
       string: ! '{ "hosts": [ { "index": 0, "peer": "10.0.1.254:12345" } ] }'
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:32 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=8H0N3t_89nKwx6bCBgOScLOFEFxNlQ5GB611QzgHmYtutfcdA0Lp8y59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=eQA9y7t8NAGcotOev6xV
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=8H0N3t_89nKwx6bCBgOScLOFEFxNlQ5GB611QzgHmYtutfcdA0Lp8y59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=eQA9y7t8NAGcotOev6xV
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
+        1, "peer": "10.0.1.254:12345" } ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:19:58 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=SYK-iAHLb9XWxnPSKCbBrtwQsfy7TZu_d24b2NY79BlqPcg_J8LaUH59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=14zlsyqlcY8Mi1W77pDA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=SYK-iAHLb9XWxnPSKCbBrtwQsfy7TZu_d24b2NY79BlqPcg_J8LaUH59xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=14zlsyqlcY8Mi1W77pDA
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
+        1, "peer": "10.0.1.254:12345" } ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:21:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=YWY4jruZ-78zoF6drMdjeBkX4bOWH5kdAqtf0dWkclEvl99CXkjTqS5-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Odr6Xa6dRJjhKMqqgRup
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:15 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=YWY4jruZ-78zoF6drMdjeBkX4bOWH5kdAqtf0dWkclEvl99CXkjTqS5-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=Odr6Xa6dRJjhKMqqgRup
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
+        1, "peer": "10.0.1.254:12345" } ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:24:15 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addknownhosts&addr=10.0.1.254&name=/home/vagrant&output=json&port=12345&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=JlN-vImixfrXjf7vmWcbX6D-7r9w4wmgE6LlCibGDmNEGRgPNYrncql-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=6dmMselioOwRKL0QnaYu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{  }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:18 GMT
+- request:
+    method: get
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getknownhosts&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=JlN-vImixfrXjf7vmWcbX6D-7r9w4wmgE6LlCibGDmNEGRgPNYrncql-xFEAAAAA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - GUID=6dmMselioOwRKL0QnaYu
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: US-ASCII
+      string: ! '{ "hosts": [ { "index": 0, "peer": "192.168.1.5:45685" }, { "index":
+        1, "peer": "10.0.1.254:12345" } ] }'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2013 16:26:18 GMT
 recorded_with: VCR 2.5.0
