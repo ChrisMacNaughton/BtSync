@@ -1,15 +1,16 @@
+# encoding: utf-8
 class BtSync
   class Directory
     include HTTParty
     include BtCommunicator
-    default_params :output => 'json'
+    default_params output: 'json'
     attr_reader :secret, :name
 
-    def initialize name, secret, btsync
+    def initialize(name, secret, btsync)
       @name = name
       @secret = secret
 
-      @opts = btsync.communication_options
+      @opts = btsync.opts
 
       find_or_create
 
@@ -17,13 +18,15 @@ class BtSync
     end
 
     def destroy
-      get(path('removefolder'), :query => { :name => name, :secret => secret} )
-      self.instance_variables.each{|v| v = nil}
+      get(path('removefolder'), query: { name: name, secret: secret })
+      self.instance_variables.each { |v| v = nil }
     end
-    def update_secret new_secret = nil
-      new_secret ||= generate_secret
-      res = get(path('updatesecret'), :query => { :name => @name, :secret =>  @secret, :newsecret => new_secret} )
-      if res.parsed_response != "{}" && res.parsed_response != '\r\ninvalid request'
+
+    def update_secret(new_secret = nil)
+      query = secret_params
+      res = get(path('updatesecret'), query: query)
+      p = res.parsed_response
+      if p != '{}' && p != '\r\ninvalid request'
         @secret = new_secret
         true
       else
@@ -31,91 +34,123 @@ class BtSync
         false
       end
     end
+
     def folders
-      res = get(path('getdir'), :query => {:dir => @name})
-      res.parsed_response["folders"]
+      res = get(path('getdir'), query: { dir: @name })
+      res.parsed_response['folders']
     end
+
     def peers
-      res = get(path('getsyncfolders') )
-      f = res.parsed_response["folders"].select{|f| f["name"] == name}.first
-      f["peers"]
+      res = get(path('getsyncfolders'))
+      r = res.parsed_response['folders'].select { |f| f['name'] == name }.first
+      r['peers']
     end
+
     def known_hosts
-      res = get(path('getknownhosts'), :query => {:name => name, :secret => secret})
+      query = { name: name, secret: secret }
+      res = get(path('getknownhosts'), query: query)
       hosts = {}
-      res["hosts"].map{|h| hosts[h["index"]] = h["peer"]}
+      res['hosts'].map { |h| hosts[h['index']] = h['peer'] }
       hosts
     end
-    def add_host host, port
-      res = get(path('addknownhosts'), :query =>{:name => name, :secret => secret, :addr =>host, :port => port} )
+
+    def add_host(host, port)
+      query = { name: name, secret: secret, addr: host, port: port }
+      get(path('addknownhosts'), query: query)
       true
     end
-    def remove_host index
-      res = get(path('removeknownhosts'), :query =>{:name => name, :secret => secret, :index => index} )
+
+    def remove_host(index)
+      query = { name: name, secret: secret, index: index }
+      res = get(path('removeknownhosts'), query: query)
       if res.parsed_response != {}
         res.parsed_response
       else
         true
       end
     end
-    def remove_host_by_ip ip, port = nil
+
+    def remove_host_by_ip(ip, port = nil)
       @hosts = known_hosts
     end
+
     def use_tracker=(opt)
       set_pref('usetracker', opt)
     end
+
     def use_tracker?
-      bool(preferences["usetracker"])
+      bool(preferences['usetracker'])
     end
+
     def use_hosts=(opt)
       set_pref('usehosts', opt)
     end
+
     def use_hosts?
-      bool(preferences["usehosts"])
+      bool(preferences['usehosts'])
     end
+
     def search_lan=(opt)
       set_pref('searchlan', opt)
     end
+
     def search_lan?
-      bool(preferences["searchlan"])
+      bool(preferences['searchlan'])
     end
+
     def search_dht=(opt)
       set_pref('searchdht', opt)
     end
+
     def search_dht?
-      bool(preferences["searchdht"])
+      bool(preferences['searchdht'])
     end
+
     def use_relay=(opt)
       set_pref('relay', opt)
     end
+
     def use_relay?
-      bool(preferences["relay"])
+      bool(preferences['relay'])
     end
+
     def delete_to_trash=(opt)
       set_pref('deletetotrash', opt)
     end
+
     def delete_to_trash?
-      bool(preferences["deletetotrash"])
+      bool(preferences['deletetotrash'])
     end
-    def is_writable? with_dir
-      bool(preferences["iswritable"])
+
+    def is_writable?(with_dir)
+      bool(preferences['iswritable'])
     end
+
     def preferences
-      res = get(path('getfolderpref'), :query => { :name => @name, :secret => @secret})
-      res.parsed_response["folderpref"]
+      res = get(path('getfolderpref'), query: { name: @name, secret: @secret })
+      res.parsed_response['folderpref']
     end
+
     def read_only_secret
-      preferences["readonlysecret"]
+      preferences['readonlysecret']
     end
+
     private
-    def set_pref pref, opt
-      res = get(path('setfolderpref'), :query => make_opts(pref, opt) )
+
+    def set_pref(pref, opt)
+      get(path('setfolderpref'), query: make_opts(pref, opt))
       true
     end
+
     def default_settings
-      opts = {
-        'name'=>@name,
-        'secret'=>@secret,
+
+      get(path('setfolderpref'), query: defaults)
+    end
+
+    def defaults
+      {
+        'name' => @name,
+        'secret' => @secret,
         'relay' => 1,
         'usetracker' => 1,
         'searchlan' => 1,
@@ -123,15 +158,24 @@ class BtSync
         'deletetotrash' => 1,
         'usehosts' => 1
       }
-      get(path('setfolderpref'), :query => opts )
     end
-    def make_opts name, opt
+
+    def make_opts(name, opt)
      opts = preferences
      opts[name] = bool_to_i(opt)
      opts.delete('readonlysecret')
-     opts.merge!({:name => @name, :secret => @secret})
+     opts.merge!({ name: @name, secret: @secret })
     end
-    def bool i
+
+    def secret_params
+      {
+        name: @name,
+        secret: @secret,
+        newsecret: new_secret || generate_secret
+      }
+    end
+
+    def bool(i)
       if i == 0
         false
       elsif i == 1
@@ -140,20 +184,22 @@ class BtSync
         i
       end
     end
-    def bool_to_i bool
+
+    def bool_to_i(bool)
       if bool
         1
       else
         0
       end
     end
+
     def find_or_create
       res = get(path('getsyncfolders'))
-      folder_list = res.parsed_response["folders"]
-      if folder_list.map{|f| f["name"]}.include? name
+      folder_list = res.parsed_response['folders']
+      if folder_list.map { |f| f['name'] }.include? name
         true
       else
-        res = get(path('addsyncfolder'), :query => { :name => name, :secret => secret})
+        res = get(path('addsyncfolder'), query: { name: name, secret: secret })
       end
     end
   end
