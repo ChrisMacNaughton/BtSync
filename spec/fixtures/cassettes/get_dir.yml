@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
@@ -17,15 +17,17 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '132'
+      - '270'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
+      string: ! '{ "folders": [ "\/\/bin", "\/\/boot", "\/\/dev", "\/\/etc", "\/\/home",
+        "\/\/lib", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt", "\/\/proc",
+        "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
+        "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
   recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
 recorded_with: VCR 2.5.0

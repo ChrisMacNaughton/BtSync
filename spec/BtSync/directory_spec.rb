@@ -45,7 +45,7 @@ describe 'BtSync::Directory' do
     @hosts.values.should include '10.0.1.254:12345'
 
     VCR.use_cassette('remove-known-host') do
-      @directory.remove_host(1)
+      @directory.remove_host_by_ip('10.0.1.254')
       @hosts = @directory.known_hosts
     end
     @hosts.values.should_not include '10.0.1.254:12345'

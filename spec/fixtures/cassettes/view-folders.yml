@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=b_xy7ohr8MUXFg1k1nZgbmfkXtXfbODbp6CfA3b5XZQizKh7hDqnfUJuxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/home/vagrant&output=json&token=FfALqgp_4YTc1nGfbree0oveZ7v4X6skB6MJn7-0pFTxUDH2jHdlfW97xFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=tzZk8JI17VLnF9e3n3Fp
+      - GUID=69hBsN2oEZj5rQj5NWXg
   response:
     status:
       code: 200
@@ -26,5 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "folders": [  ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 15:16:20 GMT
+  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
 recorded_with: VCR 2.5.0

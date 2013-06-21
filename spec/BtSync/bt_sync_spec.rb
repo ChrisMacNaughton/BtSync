@@ -12,7 +12,19 @@ describe 'BtSync' do
       @bt.device_name = 'precise32 - Default Instance'
     end
   end
-
+  it "can check for errors" do
+    @bt.errors.should be == []
+  end
+  it 'can view folders on a system' do
+    VCR.use_cassette('get dir') do
+    @bt.get_dir.should be == ['/bin', '/boot', '/dev', '/etc', '/home', '/lib', '/lost+found', '/media', '/mnt', '/opt', '/proc', '/root', '/run', '/sbin', '/selinux', '/srv', '/sys', '/tmp', '/usr', '/vagrant', '/var']
+    end
+  end
+  it 'can get the version' do
+    VCR.use_cassette('get version') do
+      @bt.get_version.should be >= 16842767
+    end
+  end
   it 'can view a folder list' do
     VCR.use_cassette('get-folders') do
       @folder = @bt.folders.first

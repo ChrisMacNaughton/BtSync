@@ -71,7 +71,15 @@ class BtSync
     end
 
     def remove_host_by_ip(ip, port = nil)
-      @hosts = known_hosts
+      known_hosts.each do |id, host|
+        host = host.split(':')
+        if ip == host[0]
+          unless port.nil?
+            next if port != host[1]
+          end
+          remove_host(id)
+        end
+      end
     end
 
     def use_tracker=(opt)

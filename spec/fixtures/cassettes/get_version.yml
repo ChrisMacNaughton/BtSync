@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getostype&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
@@ -17,14 +17,14 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '17'
+      - '23'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "os": "linux" }'
+      string: ! '{ "version": 16842767 }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
 recorded_with: VCR 2.5.0
