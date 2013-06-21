@@ -129,10 +129,10 @@ describe 'BtSync' do
   end
   it 'can check speeds' do
     VCR.use_cassette('check speeds') do
-      @bt.up.should be == {speed: 0.0, metric: 'kB/s'}
+      @bt.speed('up').should be == {speed: 0.0, metric: 'kB/s'}
     end
     VCR.use_cassette('check speeds') do
-      @bt.down.should be == {speed: 0.0, metric: 'kB/s'}
+      @bt.speed('down').should be == {speed: 0.0, metric: 'kB/s'}
     end
   end
   it 'can check for new versions' do

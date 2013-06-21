@@ -70,16 +70,17 @@ class BtSync
   end
 
   def get_speed
-    { up: up, down: down }
+    { up: speed('up'), down: speed('down') }
   end
 
-  def up
-    l = get_folder_list['speed'].split(', ')[0].split(' ')
-    {speed: l[0].to_f, metric: l[1]}
-  end
-
-  def down
-    l = get_folder_list['speed'].split(', ')[1].split(' ')
+  def speed(type)
+    case type
+    when 'up'
+      i = 0
+    when 'down'
+      i = 1
+    end
+    l = get_folder_list['speed'].split(', ')[i].split(' ')
     {speed: l[0].to_f, metric: l[1]}
   end
 
