@@ -19,23 +19,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL; path=/
+      - GUID=JFSkdCIHdS4nlhYUYtkl; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA</div></html>
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=generatesecret&output=json&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=generatesecret&output=json&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -51,19 +51,19 @@ http_interactions:
       - no-cache
     body:
       encoding: US-ASCII
-      string: ! '{ "rosecret": "RB26ETL4BXTQATBYU2DYPAWZ4DQD7FL6R", "secret": "XFOHNIZHIZKVQY654AIVM5PIPTBGYGKV"
+      string: ! '{ "rosecret": "RLDPPGDGKM5C2PRMEW6ZMY72EVTVAUY3U", "secret": "6WMOUZFGSVVVMVCJQUDL5I3INXLM2GZI"
         }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addsyncfolder&name=/home/vagrant&output=json&secret=XFOHNIZHIZKVQY654AIVM5PIPTBGYGKV&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=addsyncfolder&name=/home/vagrant&output=json&secret=6WMOUZFGSVVVMVCJQUDL5I3INXLM2GZI&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -80,19 +80,19 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "error": 200, "message": "Selected folder is already added to BitTorrent
-        Sync.", "n": "\/home\/vagrant", "secret": "XFOHNIZHIZKVQY654AIVM5PIPTBGYGKV"
+        Sync.", "n": "\/home\/vagrant", "secret": "6WMOUZFGSVVVMVCJQUDL5I3INXLM2GZI"
         }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -111,16 +111,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA&ulrate=0
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -138,16 +138,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -166,16 +166,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA&ulrate=0
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -193,16 +193,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -221,16 +221,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA&ulrate=0
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -248,16 +248,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=WJb1pKjMiL1s5WBNsyFouDZnqS4JJ7uKJoOTAhJwD0Tr7PynDpk4VNOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=okliigjDsL0hi4IBcya1zpo2JbHoEzMA_BQ6J_CrxvMi4aibHilRlGuIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=NE9ssGvlUTIsdeZm5tYL
+      - GUID=JFSkdCIHdS4nlhYUYtkl
   response:
     status:
       code: 200
@@ -274,11 +274,11 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
-        [  ], "readonlysecret": "RSQNMY7PJECCUU46NMZDZQQPK4RDERQNI", "secret": "VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP",
+        [  ], "readonlysecret": "RI6UPVDIWDVK5I2KW6NXT5FE275L2SM6L", "secret": "NWTLMODS2VA4EUZ7FJ2IA5LOFW6LOXAD",
         "size": "54.7 MB in 8 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down"
         }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
     uri: http://admin:AdminPassword@localhost:8888/gui/token.html?output=json
@@ -298,23 +298,23 @@ http_interactions:
       Content-Type:
       - text/html
       Set-Cookie:
-      - GUID=XEbURKXg3ebTU30iLubC; path=/
+      - GUID=XxIc2YRaLISEvBmFuE8z; path=/
       Cache-Control:
       - no-cache
     body:
       encoding: US-ASCII
-      string: <html><div id='token' style='display:none;'>1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA</div></html>
+      string: <html><div id='token' style='display:none;'>73Km9Q7Ep5fLA8qgz-6AyiVlS3hpucEXWWDKEjdEi866uKn2HbugC2uIxFEAAAAA</div></html>
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=73Km9Q7Ep5fLA8qgz-6AyiVlS3hpucEXWWDKEjdEi866uKn2HbugC2uIxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=XEbURKXg3ebTU30iLubC
+      - GUID=XxIc2YRaLISEvBmFuE8z
   response:
     status:
       code: 200
@@ -331,9 +331,9 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
-        [  ], "readonlysecret": "RSQNMY7PJECCUU46NMZDZQQPK4RDERQNI", "secret": "VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP",
+        [  ], "readonlysecret": "RI6UPVDIWDVK5I2KW6NXT5FE275L2SM6L", "secret": "NWTLMODS2VA4EUZ7FJ2IA5LOFW6LOXAD",
         "size": "54.7 MB in 8 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down"
         }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:07:55 GMT
 recorded_with: VCR 2.5.0
