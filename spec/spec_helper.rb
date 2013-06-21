@@ -11,10 +11,6 @@ filename = File.join(File.dirname(__FILE__), 'support', '**', '*.rb')
 filename = File.expand_path(filename)
 Dir[filename].each { |f| require f }
 
-RSpec.configure do |config|
-
-end
-
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/cassettes'
   c.hook_into :webmock # or :fakeweb
