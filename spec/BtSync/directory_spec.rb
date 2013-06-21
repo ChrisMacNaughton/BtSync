@@ -96,4 +96,22 @@ describe 'BtSync::Directory' do
       @directory.delete_to_trash?.should be == false
     end
   end
+  it "can change its secret" do
+    @secret = @directory.secret
+    VCR.use_cassette('change secret empty') do
+      @directory.update_secret
+      @directory.secret.should_not be == @secret
+    end
+
+    VCR.use_cassette('change secret custom') do
+      new_secret = @directory.generate_secret
+      @directory.update_secret(new_secret)
+      @directory.secret.should_not be == @secret
+      @directory.secret.should be == new_secret
+    end
+    VCR.use_cassette('reset secret') do
+      @directory.update_secret(@secret)
+    end
+    @directory.secret.should be == @secret
+  end
 end

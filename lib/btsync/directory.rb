@@ -22,8 +22,8 @@ class BtSync
       self.instance_variables.each { |v| v = nil }
     end
 
-    def update_secret(new_secret = nil)
-      query = secret_params
+    def update_secret(new_secret = generate_secret)
+      query = secret_params(new_secret)
       res = get(path('updatesecret'), query: query)
       p = res.parsed_response
       if p != '{}' && p != '\r\ninvalid request'
@@ -143,7 +143,6 @@ class BtSync
     end
 
     def default_settings
-
       get(path('setfolderpref'), query: defaults)
     end
 
@@ -167,11 +166,11 @@ class BtSync
      opts.merge!({ name: @name, secret: @secret })
     end
 
-    def secret_params
+    def secret_params(s)
       {
         name: @name,
         secret: @secret,
-        newsecret: new_secret || generate_secret
+        newsecret: s
       }
     end
 
