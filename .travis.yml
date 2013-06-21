@@ -8,6 +8,7 @@ install:
   - sudo echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib" | sudo tee -a /etc/apt/sources.list
   - wget http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
   - sudo apt-get update
+  - sudo apt-get -y install linux-headers-2.6.32-042stab061.2
   - sudo apt-get -y install virtualbox-4.2
   - VBoxManage -v
   - wget http://files.vagrantup.com/packages/7e400d00a3c5a0fdf2809c8b5001a035415a607b/vagrant_1.2.2_x86_64.deb
