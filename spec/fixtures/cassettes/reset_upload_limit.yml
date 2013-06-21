@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=e5QssqZ_OHOUmk3kVE5YYxTG_z2Q5YyLjQIcMXnwinb53L90QGl5D0mHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=H5tVvo1j629FBTBP1nCk
   response:
     status:
       code: 200
@@ -27,16 +27,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA&ulrate=0
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=e5QssqZ_OHOUmk3kVE5YYxTG_z2Q5YyLjQIcMXnwinb53L90QGl5D0mHxFEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=H5tVvo1j629FBTBP1nCk
   response:
     status:
       code: 200
@@ -54,16 +54,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=e5QssqZ_OHOUmk3kVE5YYxTG_z2Q5YyLjQIcMXnwinb53L90QGl5D0mHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=H5tVvo1j629FBTBP1nCk
   response:
     status:
       code: 200
@@ -82,337 +82,5 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=5KBISEcuMI-2QMxr82ewzlCL21NPMKnHcjR8SYUaze2oFe2C-Lj0_St9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=crrBwOkH9L8F8glKjBB4
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '135'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=5KBISEcuMI-2QMxr82ewzlCL21NPMKnHcjR8SYUaze2oFe2C-Lj0_St9xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=crrBwOkH9L8F8glKjBB4
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=5KBISEcuMI-2QMxr82ewzlCL21NPMKnHcjR8SYUaze2oFe2C-Lj0_St9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=crrBwOkH9L8F8glKjBB4
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=mWNjOb0VM8VYjKmtaL29N3H-ZTKZOjml2WOaFuLY449h94Yp1BIZH3d9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=WgbD283oGBmeereJzuMc
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '135'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:12 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=mWNjOb0VM8VYjKmtaL29N3H-ZTKZOjml2WOaFuLY449h94Yp1BIZH3d9xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=WgbD283oGBmeereJzuMc
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:12 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=mWNjOb0VM8VYjKmtaL29N3H-ZTKZOjml2WOaFuLY449h94Yp1BIZH3d9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=WgbD283oGBmeereJzuMc
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:12 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=tESMWGR1oU9MA_KMKFYBZwRjv3Fvqhm1XrbILhm-mm8Od6V1hzd_XyR-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=J8oGz1NLFd3IlKHYbaKl
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '135'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:06 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=tESMWGR1oU9MA_KMKFYBZwRjv3Fvqhm1XrbILhm-mm8Od6V1hzd_XyR-xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=J8oGz1NLFd3IlKHYbaKl
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:06 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=tESMWGR1oU9MA_KMKFYBZwRjv3Fvqhm1XrbILhm-mm8Od6V1hzd_XyR-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=J8oGz1NLFd3IlKHYbaKl
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:06 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=6AJtc-9OVHYYETFyWyj-tOrFe-dxhAbueG5GjZFnUdEHy7cKDpwCcZt-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=aQJLJZdVhOORuhrqYXOK
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '135'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:05 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=6AJtc-9OVHYYETFyWyj-tOrFe-dxhAbueG5GjZFnUdEHy7cKDpwCcZt-xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=aQJLJZdVhOORuhrqYXOK
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:05 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=6AJtc-9OVHYYETFyWyj-tOrFe-dxhAbueG5GjZFnUdEHy7cKDpwCcZt-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=aQJLJZdVhOORuhrqYXOK
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:05 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 recorded_with: VCR 2.5.0

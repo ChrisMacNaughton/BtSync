@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=bQOpNNKVXxOgMvvs7ZxVYSLZoRaO1N_Wpr_HbyE7mVq-NY9xz6f1RkWHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=apVcbpkaI3Gnz2a8nMqB
   response:
     status:
       code: 200
@@ -26,113 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{ "version": 16842767 }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=l4Hk82ujTUgPk9srowpL16GLR5N7kn24NTH4rSs7JmdMi5fv8Y7qBCl9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=0OGPTyDRX4Wc2cBH775e
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "version": 16842767 }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:53 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=YCTa0W9cMvfiu1T2XxeXJT5nC01YrNqJNon5-7jAJAs-MA03h0PcO3F9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=DpRNruvOjZuhGGrYULkA
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "version": 16842767 }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:06 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=mk3kRhzayPu-kyXxmEbqwUzUbMeMoizWv1orsw507_N7SpSftRvrkBp-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=YmXN7S9O3bXRVmFdtzRc
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "version": 16842767 }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:23:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getversion&output=json&token=r-mvf5tC6dSmXg4L32s3lPnRt6Uj7_nbm3o0eodWuWpwiytYsMUhiIt-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=OM4XebuI0ufudBSmmfP4
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "version": 16842767 }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:25:49 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:02 GMT
 recorded_with: VCR 2.5.0

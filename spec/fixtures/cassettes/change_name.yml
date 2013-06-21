@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=gx12mNA1xPVRlOuFcJkgVEEEOajioqk0gMX_dLt8GWHoBv6LYkBWaEiHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=xNGBB2UkWaBuhJfwNwLE
   response:
     status:
       code: 200
@@ -27,16 +27,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA&ulrate=0
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=gx12mNA1xPVRlOuFcJkgVEEEOajioqk0gMX_dLt8GWHoBv6LYkBWaEiHxFEAAAAA&ulrate=0
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=xNGBB2UkWaBuhJfwNwLE
   response:
     status:
       code: 200
@@ -54,16 +54,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=gx12mNA1xPVRlOuFcJkgVEEEOajioqk0gMX_dLt8GWHoBv6LYkBWaEiHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=xNGBB2UkWaBuhJfwNwLE
   response:
     status:
       code: 200
@@ -82,337 +82,5 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
         63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=coRJ_aTObciY6CUNobAizpztaptt4vbfvuq8F0Hb8kVEwz6jmtF8iit9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=tmn2G2HlZVTbGq4bq2hV
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=coRJ_aTObciY6CUNobAizpztaptt4vbfvuq8F0Hb8kVEwz6jmtF8iit9xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=tmn2G2HlZVTbGq4bq2hV
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=coRJ_aTObciY6CUNobAizpztaptt4vbfvuq8F0Hb8kVEwz6jmtF8iit9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=tmn2G2HlZVTbGq4bq2hV
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '119'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
-        63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:55 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=Csu---2EJLkAOamT6o_q_X2sZLlr0GcYc1PbrUMxq_6f6skSqu1InXZ9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=uuA8n9LfUDpGzqaYuXTT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:11 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=Csu---2EJLkAOamT6o_q_X2sZLlr0GcYc1PbrUMxq_6f6skSqu1InXZ9xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=uuA8n9LfUDpGzqaYuXTT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:11 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=Csu---2EJLkAOamT6o_q_X2sZLlr0GcYc1PbrUMxq_6f6skSqu1InXZ9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=uuA8n9LfUDpGzqaYuXTT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '119'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
-        63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:11 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=w-Hmg8VJEq7f9HhA47SyufVarktkvKOE1mXuqQefQZtOo5hSZuhANyN-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=IR3rrYILB5YJnfeq1NUo
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:04 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=w-Hmg8VJEq7f9HhA47SyufVarktkvKOE1mXuqQefQZtOo5hSZuhANyN-xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=IR3rrYILB5YJnfeq1NUo
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:04 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=w-Hmg8VJEq7f9HhA47SyufVarktkvKOE1mXuqQefQZtOo5hSZuhANyN-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=IR3rrYILB5YJnfeq1NUo
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '119'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
-        63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:04 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=UFaxBzgSKtuFYtk9-2FPWkFLbQ34E05BmdWL8EU7FzreoxA7S3hDS5l-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=AGj7Br0IteqBlGUzqloT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '132'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
-        0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:03 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=IceyEC-Virtual2&dlrate=0&listeningport=63754&output=json&portmapping=0&token=UFaxBzgSKtuFYtk9-2FPWkFLbQ34E05BmdWL8EU7FzreoxA7S3hDS5l-xFEAAAAA&ulrate=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=AGj7Br0IteqBlGUzqloT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:03 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=UFaxBzgSKtuFYtk9-2FPWkFLbQ34E05BmdWL8EU7FzreoxA7S3hDS5l-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=AGj7Br0IteqBlGUzqloT
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '119'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "settings": { "devicename": "IceyEC-Virtual2", "dlrate": 0, "listeningport":
-        63754, "portmapping": 0, "ulrate": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:03 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:05 GMT
 recorded_with: VCR 2.5.0

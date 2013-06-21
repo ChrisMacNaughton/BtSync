@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=FfALqgp_4YTc1nGfbree0oveZ7v4X6skB6MJn7-0pFTxUDH2jHdlfW97xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=kKay0uaKrweAfufeM10v87gYk-wYupIOj_slTjp25GNHi8N4fee9DU2HxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=69hBsN2oEZj5rQj5NWXg
+      - GUID=vnpGqzzCnmriFoRrD0zD
   response:
     status:
       code: 200
@@ -25,104 +25,19 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 1, "usetracker": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:32 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=FfALqgp_4YTc1nGfbree0oveZ7v4X6skB6MJn7-0pFTxUDH2jHdlfW97xFEAAAAA&usehosts=0&usetracker=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=69hBsN2oEZj5rQj5NWXg
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:32 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=FfALqgp_4YTc1nGfbree0oveZ7v4X6skB6MJn7-0pFTxUDH2jHdlfW97xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=69hBsN2oEZj5rQj5NWXg
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 0, "usetracker": 0 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:32 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=0gL3PhtzoacxOU2CW5QymSZGo0YCuKUwxxDbnO5u5lw_yjlrfetQmi99xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=wu9GdKJNmeZfyqH4a8An
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "relay": 1, "searchdht": 0, "searchlan":
+        "ROP5DLLEZGVMTW3AODLHODIT4THID6J22", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 1, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:59 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:10 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=0gL3PhtzoacxOU2CW5QymSZGo0YCuKUwxxDbnO5u5lw_yjlrfetQmi99xFEAAAAA&usehosts=0&usetracker=1
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=kKay0uaKrweAfufeM10v87gYk-wYupIOj_slTjp25GNHi8N4fee9DU2HxFEAAAAA&usehosts=0&usetracker=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=wu9GdKJNmeZfyqH4a8An
+      - GUID=vnpGqzzCnmriFoRrD0zD
   response:
     status:
       code: 200
@@ -140,16 +55,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:59 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:10 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=0gL3PhtzoacxOU2CW5QymSZGo0YCuKUwxxDbnO5u5lw_yjlrfetQmi99xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=UWAX2RJ24TNPL36VL6UPHL2FRS5BIIYP&token=kKay0uaKrweAfufeM10v87gYk-wYupIOj_slTjp25GNHi8N4fee9DU2HxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=wu9GdKJNmeZfyqH4a8An
+      - GUID=vnpGqzzCnmriFoRrD0zD
   response:
     status:
       code: 200
@@ -166,263 +81,8 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RVCKUPP2LLE5XNONEXBD6ZUD3VN4SWIBL", "relay": 1, "searchdht": 0, "searchlan":
+        "ROP5DLLEZGVMTW3AODLHODIT4THID6J22", "relay": 1, "searchdht": 0, "searchlan":
         1, "usehosts": 0, "usetracker": 1 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:19:59 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=x67l6dekpA8yIayGQNj5Gxo9v9Qne9yMDmzx-w0DTLfv29TxTNFljIB9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=O33ZlTWEyXXc5orgI6F9
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RA5XTW2RXXAG2JM45FPWODC5DHYFZP775", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 1, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:20 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=x67l6dekpA8yIayGQNj5Gxo9v9Qne9yMDmzx-w0DTLfv29TxTNFljIB9xFEAAAAA&usehosts=0&usetracker=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=O33ZlTWEyXXc5orgI6F9
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:20 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=2MON5PITF2UCI4YE676SAVEZ2MCI7ZNS&token=x67l6dekpA8yIayGQNj5Gxo9v9Qne9yMDmzx-w0DTLfv29TxTNFljIB9xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=O33ZlTWEyXXc5orgI6F9
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RA5XTW2RXXAG2JM45FPWODC5DHYFZP775", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 0, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:21:20 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=Osv7j1C2LpVROFnITKRJ3DClr6ULmucHDhX43dzvF58dzJIbhXAshDF-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=oF8enV29VUwyY5PTojSn
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RL3L23TPPJTF3ERLMBOQX2RIVLPPHICII", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 1, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:18 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=Osv7j1C2LpVROFnITKRJ3DClr6ULmucHDhX43dzvF58dzJIbhXAshDF-xFEAAAAA&usehosts=0&usetracker=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=oF8enV29VUwyY5PTojSn
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:18 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=VEB6ASHPMVFC7RK74YEDZSIV4XIMVR4U&token=Osv7j1C2LpVROFnITKRJ3DClr6ULmucHDhX43dzvF58dzJIbhXAshDF-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=oF8enV29VUwyY5PTojSn
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "RL3L23TPPJTF3ERLMBOQX2RIVLPPHICII", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 0, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:24:18 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=9xb5wnLXCuU33L1T8xVjsWY_WymaGRvP3yrZgSim1e5OUrPSRkZHbK1-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=a5XJp6qYwFESua0dFVse
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "R2RS355PZVS7N6YHUFULWDTMCM35KQ7QT", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 1, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:23 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setfolderpref&deletetotrash=1&iswritable=1&name=/home/vagrant&output=json&relay=1&searchdht=0&searchlan=1&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=9xb5wnLXCuU33L1T8xVjsWY_WymaGRvP3yrZgSim1e5OUrPSRkZHbK1-xFEAAAAA&usehosts=0&usetracker=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=a5XJp6qYwFESua0dFVse
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{  }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:23 GMT
-- request:
-    method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getfolderpref&name=/home/vagrant&output=json&secret=GGTBO3BOQWUUAOSWOUWYFG2X5KTS24SE&token=9xb5wnLXCuU33L1T8xVjsWY_WymaGRvP3yrZgSim1e5OUrPSRkZHbK1-xFEAAAAA
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Cookie:
-      - GUID=a5XJp6qYwFESua0dFVse
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '188'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: US-ASCII
-      string: ! '{ "folderpref": { "deletetotrash": 1, "iswritable": 1, "readonlysecret":
-        "R2RS355PZVS7N6YHUFULWDTMCM35KQ7QT", "relay": 1, "searchdht": 0, "searchlan":
-        1, "usehosts": 0, "usetracker": 1 } }'
-    http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:26:23 GMT
+  recorded_at: Fri, 21 Jun 2013 17:03:10 GMT
 recorded_with: VCR 2.5.0
