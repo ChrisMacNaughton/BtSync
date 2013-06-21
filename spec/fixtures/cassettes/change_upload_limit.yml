@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -27,16 +27,16 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 0 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:30 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:22 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA&ulrate=1000
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=setsettings&devicename=precise32%20-%20Default%20Instance&dlrate=0&listeningport=63754&output=json&portmapping=0&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA&ulrate=1000
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -54,16 +54,16 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:22 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=PGnLDGGWCPFy2L0p4nF9Yp73Dnme0Z8Dhjw4-tQDtse-VyZUiLplOG17xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsettings&output=json&token=vl_Ld9BNQLkoXOKIHKQSI1MFfef9P4C-boJR_GPhPb-CF8pW7Ws9xdGHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=ZWGHB6mSj6kSgp2cOqXN
+      - GUID=EPhXmCDxFGmN1wtvjnuc
   response:
     status:
       code: 200
@@ -82,5 +82,5 @@ http_interactions:
       string: ! '{ "settings": { "devicename": "precise32 - Default Instance", "dlrate":
         0, "listeningport": 63754, "portmapping": 0, "ulrate": 1000 } }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:22 GMT
 recorded_with: VCR 2.5.0

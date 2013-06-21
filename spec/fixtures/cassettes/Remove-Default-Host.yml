@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=WLIOCZHLU2XLLYH24ALYRZVWWRTG2JRQ&token=FfALqgp_4YTc1nGfbree0oveZ7v4X6skB6MJn7-0pFTxUDH2jHdlfW97xFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=removeknownhosts&index=0&name=/home/vagrant&output=json&secret=VL7HERYH2OMR26GGVTJ3RKLPXZP5ULRP&token=1VUNIk8_4hZXE_XMMhGuIV7iMXkSQmzYWBCNzZQX9HdQMk8LOGYLVtOHxFEAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=69hBsN2oEZj5rQj5NWXg
+      - GUID=XEbURKXg3ebTU30iLubC
   response:
     status:
       code: 200
@@ -26,5 +26,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{  }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 16:12:31 GMT
+  recorded_at: Fri, 21 Jun 2013 17:05:23 GMT
 recorded_with: VCR 2.5.0
