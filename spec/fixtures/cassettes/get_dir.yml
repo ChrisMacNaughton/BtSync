@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=omYvb_8dj09aqM6kSkwSW4RUeFBoxBFdXGOzqlq-3XEcIOJq3V_VPn6TxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=Ue_atzDoBdF8ebBjydDwKSO_1QYJUKxfB0FJyilr3thdchRHWHXAJr08y1EAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=uKTmyBQxmUIBGP9rVF0R
+      - GUID=I4gBi5tF6R79fZWvMO3W
   response:
     status:
       code: 200
@@ -17,7 +17,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '283'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -25,20 +25,20 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ "\/\/bin", "\/\/boot", "\/\/dev", "\/\/etc", "\/\/home",
-        "\/\/lib", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt", "\/\/proc",
-        "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
-        "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
+        "\/\/lib", "\/\/lib64", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt",
+        "\/\/proc", "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys",
+        "\/\/tmp", "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:55:10 GMT
+  recorded_at: Wed, 26 Jun 2013 19:10:56 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=omYvb_8dj09aqM6kSkwSW4RUeFBoxBFdXGOzqlq-3XEcIOJq3V_VPn6TxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=Ue_atzDoBdF8ebBjydDwKSO_1QYJUKxfB0FJyilr3thdchRHWHXAJr08y1EAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=uKTmyBQxmUIBGP9rVF0R
+      - GUID=I4gBi5tF6R79fZWvMO3W
   response:
     status:
       code: 200
@@ -47,7 +47,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '283'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -55,20 +55,20 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ "\/\/bin", "\/\/boot", "\/\/dev", "\/\/etc", "\/\/home",
-        "\/\/lib", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt", "\/\/proc",
-        "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
-        "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
+        "\/\/lib", "\/\/lib64", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt",
+        "\/\/proc", "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys",
+        "\/\/tmp", "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:55:10 GMT
+  recorded_at: Wed, 26 Jun 2013 19:10:56 GMT
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=omYvb_8dj09aqM6kSkwSW4RUeFBoxBFdXGOzqlq-3XEcIOJq3V_VPn6TxFEAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getdir&dir=/&output=json&token=Ue_atzDoBdF8ebBjydDwKSO_1QYJUKxfB0FJyilr3thdchRHWHXAJr08y1EAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=uKTmyBQxmUIBGP9rVF0R
+      - GUID=I4gBi5tF6R79fZWvMO3W
   response:
     status:
       code: 200
@@ -77,7 +77,7 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '270'
+      - '283'
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -85,9 +85,9 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ "\/\/bin", "\/\/boot", "\/\/dev", "\/\/etc", "\/\/home",
-        "\/\/lib", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt", "\/\/proc",
-        "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys", "\/\/tmp",
-        "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
+        "\/\/lib", "\/\/lib64", "\/\/lost+found", "\/\/media", "\/\/mnt", "\/\/opt",
+        "\/\/proc", "\/\/root", "\/\/run", "\/\/sbin", "\/\/selinux", "\/\/srv", "\/\/sys",
+        "\/\/tmp", "\/\/usr", "\/\/vagrant", "\/\/var" ] }'
     http_version: 
-  recorded_at: Fri, 21 Jun 2013 17:55:10 GMT
+  recorded_at: Wed, 26 Jun 2013 19:10:56 GMT
 recorded_with: VCR 2.5.0
