@@ -5,7 +5,6 @@ rvm:
   - 2.0.0
   - rbx-19mode
   - jruby-19mode
-  - ruby-head
   - jruby-head
 # uncomment this line if your project needs to run something other than `rake`:
 script:
