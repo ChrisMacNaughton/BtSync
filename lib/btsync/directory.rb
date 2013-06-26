@@ -62,14 +62,10 @@ class BtSync
     end
 
     def remove_host(index)
-      host_name = known_hosts.select { |id, host| id == index}
+      host_name = known_hosts.select { |id, host| id == index }
       query = { name: name, secret: secret, index: index }
-      res = get(path('removeknownhosts'), query: query)
-      if known_hosts.select { |id, host| host == host_name }.empty?
-        true
-      else
-        false
-      end
+      get(path('removeknownhosts'), query: query) unless host_name.nil? || host_name.empty?
+      known_hosts.select { |id, host| host == host_name }.empty?
     end
 
     def remove_host_by_ip(ip, port = nil)

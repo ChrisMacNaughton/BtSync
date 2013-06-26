@@ -128,11 +128,14 @@ describe 'BtSync' do
     end
   end
   it 'can check speeds' do
-    VCR.use_cassette('check speeds') do
+    VCR.use_cassette('check speeds', allow_playback_repeats: true) do
       @bt.speed('up').should be == {speed: 0.0, metric: 'kB/s'}
     end
-    VCR.use_cassette('check speeds') do
+    VCR.use_cassette('check speeds', allow_playback_repeats: true) do
       @bt.speed('down').should be == {speed: 0.0, metric: 'kB/s'}
+    end
+    VCR.use_cassette('check speeds', allow_playback_repeats: true) do
+      @bt.get_speed.should be == {up: {speed: 0.0, metric: 'kB/s'}, down: {speed: 0.0, metric: 'kB/s'}}
     end
   end
   it 'can check for new versions' do
@@ -144,5 +147,6 @@ describe 'BtSync' do
   end
   it 'can symbolize a hash -_-' do
     @bt.send('symbolize', {'test' => 'value'}).should be == {test: 'value'}
+    @bt.send('symbolize', {test: 'value'}).should be == {test: 'value'}
   end
 end

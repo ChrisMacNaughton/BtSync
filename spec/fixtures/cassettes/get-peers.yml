@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=_2YtM_V6Eb5UnhkG0shJLzLJivvdsKdSjvo_ezW3NpX-TUe6WTJhDMU8y1EAAAAA
+    uri: http://admin:AdminPassword@localhost:8888/gui/?action=getsyncfolders&output=json&token=5OZrwPiPN0PWLLTgTaxBVnXNFGtpvNkFJqM_K86x7E4bbYq2Rz8lnvJAy1EAAAAA
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Cookie:
-      - GUID=GxhC9Xm9be8AXebn5ZqI
+      - GUID=aLbVst8axvY3uaWPU5gh
   response:
     status:
       code: 200
@@ -25,9 +25,9 @@ http_interactions:
     body:
       encoding: US-ASCII
       string: ! '{ "folders": [ { "iswritable": 1, "name": "\/home\/vagrant", "peers":
-        [  ], "readonlysecret": "R3DKA7NYWLC67W3EHXH6NHJ3MIEELAH46", "secret": "DOMTXCNDYNP6G5L46ITYPJYMWX6KF5HI",
+        [  ], "readonlysecret": "RUR3WULEQ5RJOTJOZJ475HLBWCGTKUBDL", "secret": "BYDYGCQYU66P5BP23F4ADOCMO5ZGTX7N",
         "size": "7.4 MB in 126 files" } ], "speed": "0.0 kB\/s up, 0.0 kB\/s down"
         }'
     http_version: 
-  recorded_at: Wed, 26 Jun 2013 19:11:33 GMT
+  recorded_at: Wed, 26 Jun 2013 19:29:13 GMT
 recorded_with: VCR 2.5.0
