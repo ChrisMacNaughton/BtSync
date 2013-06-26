@@ -4,6 +4,10 @@ require 'webmock'
 require 'coveralls'
 Coveralls.wear!
 
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  Coveralls::SimpleCov::Formatter,
+  SimpleCov::Formatter::HTMLFormatter
+]
 def file_fixture(filename)
   open(File.join(File.dirname(__FILE__), 'fixtures', "#{filename.to_s}")).read
 end
